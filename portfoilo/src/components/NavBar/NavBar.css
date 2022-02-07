@@ -1,9 +1,16 @@
-.nav-menu{
-    margin: 24px 0px ;
-    display: flex;
+.nav-menu  {
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 0px 96px 0px;
+  display: flex;
 }
 
-  .homepage {
-      color:#ffc340;
-      font-weight: bolder;
-  }
+.title {
+  margin: 0px 16px;
+}
+
+.homepage {
+  color: #ffc340;
+  font-weight: bolder;
+  margin-left: 0px;
+}
