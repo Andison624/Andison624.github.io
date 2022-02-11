@@ -1,12 +1,23 @@
-.nav-menu  {
+.nav-menu {
   justify-content: space-between;
   align-items: center;
-  margin: 32px 0px 96px 0px;
+  margin-top: 32px;
   display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 42px;
+  padding-right: 42px;
+  margin-bottom: 24px;
 }
 
 .title {
   margin: 0px 16px;
+  font-size: 24px;
+}
+
+.title:hover{
+  color: #ffc340;
+  transition: 0.25s;
 }
 
 .homepage {

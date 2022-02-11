@@ -1,7 +1,6 @@
 * {
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "PT Serif", serif;
   margin: 0px;
   padding: 0px;
 }
@@ -10,12 +9,35 @@
   background-color: #fff6c0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "PT Serif", serif;
+}
+
+body {
+  overflow: visible;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+select {
+  font-family: BentonSansRE, Verdana, sans-serif;
+}
+
 a {
   color: #5c5c5c;
 }
 
 html {
-  display: flex;
   justify-content: center;
 }
 
@@ -26,10 +48,6 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   color: #424850;
-  font-family: "Colfax", Sans-Serif;
+  font-family: inherit;
   line-height: 2.6rem;
-}
-
-div {
-  margin: 0px 24px;
 }

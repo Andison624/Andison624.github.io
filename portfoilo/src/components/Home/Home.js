@@ -4,27 +4,43 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="Home">
       <h1 className="line-1">
         <span className="wave" role="img" aria-labelledby="wave">
           👋🏻
         </span>
         Hi, I'm{" "}
-        <Link to="#" className="myName homeA">
+        <Link to="#" className="myName homeLinkText">
           Andison
         </Link>
       </h1>
       <h1 className="line-2">
-        I <Link to="#" className="homeA">learn</Link>, <Link to="#" className="homeA">code</Link> &{" "}
-        <Link to="#" className="homeA">play</Link>
+        I{" "}
+        <Link to="#" className="homeLinkText">
+          learn
+        </Link>
+        ,{" "}
+        <Link to="#" className="homeLinkText">
+          code
+        </Link>{" "}
+        &{" "}
+        <Link to="#" className="homeLinkText">
+          play
+        </Link>
         <strong>!</strong>
       </h1>
-
-      <p>
-        I'm a front-end developer in Hong Kong. I'll equip myself with the
-        knowledge of learning UI/UX and backend. I'm passionate about creating
-        interesting works, and learning different things.
-      </p>
+      <div>
+        <p>
+          I'm a front-end developer in Hong Kong. I'm reinforcing my front-end
+          web development knowledge and trying to learn UI/UX. I'm passionate
+          about creating interesting web & function, and learning different
+          things. Currently, I'm looking for a job related to web development.
+          <br />
+          <Link to="#" className="homeLinkText2">
+            Contact me
+          </Link>
+        </p>
+      </div>
     </div>
   );
 }

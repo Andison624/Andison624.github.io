@@ -9,11 +9,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <Project />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route /> */}
+        <Route path="../Project/Project.js" element={<Project />} />
       </Routes>
+      <Project />
     </BrowserRouter>
   );
 }

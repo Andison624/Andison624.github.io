@@ -5,14 +5,14 @@ export default function NavBar() {
   return (
     <nav className="nav-menu">
       <div>
-        <h4>
-          <Link to="#" className="title homepage">
+        <span>
+          <Link to='/' className="title homepage">
             Andison
           </Link>
-        </h4>
+        </span>
       </div>
       <div>
-        <h4>
+        <span>
           <Link to="#" className="title">
             MyPlan
           </Link>
@@ -22,7 +22,7 @@ export default function NavBar() {
           <Link to="#" className="title">
             About
           </Link>
-        </h4>
+        </span>
       </div>
     </nav>
   );
