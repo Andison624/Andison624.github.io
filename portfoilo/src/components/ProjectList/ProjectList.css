@@ -1,0 +1,72 @@
+
+.projectList {
+  padding-top: 51px;
+}
+
+.projectList h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.projectList span {
+  font-family: "Lato", sans-serif;
+  margin-left: 10%;
+}
+
+.sideProjectList {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .project {
+    padding: 24px;
+  }
+  .sideProject-text p{
+    font-size: 14px;
+    line-height: 1.75rem;
+  }
+}
+
+.sideProject {
+  display: flex;
+  margin: 125px 0px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center; 
+}
+
+.sideProject-text {
+  position: relative;
+  width: 40%;
+
+}
+
+.sideProject-text p {
+  font-size: 20px;
+  max-width: 540px;
+}
+
+.sideProject-img {
+  width:55%;
+  display: block;
+  max-width: 500px;
+
+}
+
+.sideProject-img img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 50px 0 rgb(0 0 0 / 13%);
+  background-size: cover;
+  border-radius: 5px;
+}
+
+#findYourHat img{
+  height: 250px;
+}
+
+#colmarAcademy {
+  margin-top: 80px;
+}

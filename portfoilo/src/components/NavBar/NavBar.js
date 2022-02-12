@@ -13,11 +13,11 @@ export default function NavBar() {
       </div>
       <div>
         <span>
+{/*           <Link to="#" className="title">
+            Work
+          </Link> */}
           <Link to="#" className="title">
-            MyPlan
-          </Link>
-          <Link to="#" className="title">
-            MyProject
+            SideProject
           </Link>
           <Link to="#" className="title">
             About
