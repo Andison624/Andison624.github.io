@@ -26,20 +26,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="quickLinks">
-          <h3>QUICK LINKS</h3>
-          <ls>
-            <div>
-              <Link to="#">Home page</Link>
-            </div>
-            <div>
-              <Link to="#">Side project</Link>
-            </div>
-            <div>
-              <Link to="#">About</Link>
-            </div>
-          </ls>
-        </div>
       </div>
     </div>
   );
