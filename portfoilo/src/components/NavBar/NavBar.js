@@ -16,7 +16,7 @@ export default function NavBar() {
 {/*           <Link to="#" className="title">
             Work
           </Link> */}
-          <Link to="#" className="title">
+          <Link to=".projectList" className="title">
             SideProject
           </Link>
           <Link to="#" className="title">

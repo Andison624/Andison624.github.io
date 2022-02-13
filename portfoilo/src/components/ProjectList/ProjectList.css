@@ -19,16 +19,6 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 991px) {
-  .project {
-    padding: 24px;
-  }
-  .sideProject-text p{
-    font-size: 14px;
-    line-height: 1.75rem;
-  }
-}
-
 .sideProject {
   display: flex;
   margin: 125px 0px;
@@ -40,7 +30,7 @@
 .sideProject-text {
   position: relative;
   width: 40%;
-
+  
 }
 
 .sideProject-text p {
@@ -52,7 +42,7 @@
   width:55%;
   display: block;
   max-width: 500px;
-
+  
 }
 
 .sideProject-img img {
@@ -61,6 +51,12 @@
   box-shadow: 0 4px 50px 0 rgb(0 0 0 / 13%);
   background-size: cover;
   border-radius: 5px;
+  cursor: pointer;  
+  transition: all 0.6s;  
+}
+
+.sideProject-img img:hover{
+  transform: scale(1.1);
 }
 
 #findYourHat img{
@@ -69,4 +65,17 @@
 
 #colmarAcademy {
   margin-top: 80px;
+}
+
+@media screen and (max-width: 991px) {
+  .project {
+    padding: 24px;
+  }
+  .sideProject-text p{
+    font-size: 14px;
+    line-height: 1.75rem;
+  }
+  .projectList span {
+    margin-left: 24px;
+  }
 }
