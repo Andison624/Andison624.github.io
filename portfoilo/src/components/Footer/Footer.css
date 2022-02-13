@@ -6,7 +6,8 @@
     max-width: 1100px;
     width: 90%;
     margin: 0 auto;
-    padding: 90px 50px;
+    padding: 90px 0;
+    display: flex;
 }
 
 .footer-img {
@@ -23,4 +24,20 @@
 
 .footer-img-inner img:hover{
     transform: scale(1.4);
+}
+
+/* .contact {
+    padding-right: 50px;
+} */
+.contact, .quickLinks {
+    padding: 0 50px;
+}
+
+.quickLinks div {
+    margin-top: 10px;
+}
+
+.quickLinks div:hover {
+    margin-left: 10px;
+    transition: 0.5s;
 }
