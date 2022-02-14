@@ -1,15 +1,16 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+
 import ColmarAcademy from "../../images/ColmarAcademy.png";
 import FindYourHat from "../../images/FindYourHat.png";
 import NumberGuesser from "../../images/NumberGuesser.png";
 import Jammming from "../../images/Jammming.png";
 import ToDoList from "../../images/ToDoList.png";
-import $ from "jquery";
+
 import "./ProjectList.css";
 
 export default function Project() {
+
   const pjData = [
     {
       id: "colmarAcademy",
@@ -58,37 +59,31 @@ export default function Project() {
     },
   ];
 
-  const [isVisible, setVisible] = useState(false);
-  const domRef = React.useRef();
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setVisible(true);
-        }
-      },
-      {
-        root: null,
-        rootMargin: "1500px",
-        threshold: 0.1,
+  // (https://alvarotrigo.com/blog/css-animations-scroll/)
+  const reveal =() => {
+    var reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
       }
-    );
-    observer.observe(domRef.current);
-    return () => observer.unobserve(domRef.current);
-  }, []);
+    }
+  }
+  window.addEventListener("scroll", reveal);
 
   return (
     <div className="projectList">
-      <span>──────&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Side Project</span>
+      <span className="reveal">──────&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Side Project</span>
       <div className="sideProjectList">
         {pjData.map((pj, col) => {
           return col % 2 == 0 ? (
             <div
               id={pj.id}
-              ref={domRef}
-              className={`sideProject fade-in-section ${
-                isVisible ? "is-visible" : ""
-              }`}
+              className="sideProject reveal"
               style={pj.style}
             >
               <div className="sideProject-text">
@@ -105,10 +100,7 @@ export default function Project() {
           ) : (
             <div
               id={pj.id}
-              ref={domRef}
-              className={`sideProject fade-in-section ${
-                isVisible ? "is-visible" : ""
-              }`}
+              className="sideProject reveal"
             >
               <div className="sideProject-img">
                 <img src={pj.src} alt={pj.alt} />
