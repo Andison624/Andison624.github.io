@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from "react";
 import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
 import ProjectList from "../ProjectList/ProjectList.js";
 import Home from "../Home/Home.js";
@@ -12,9 +13,9 @@ export default function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projectList" element={<ProjectList />} />
+        {/* <Route path="#" element={<Project />} /> */}
       </Routes>
-      <ProjectList />
+      <ProjectList/>
       <Footer />
     </BrowserRouter>
   );

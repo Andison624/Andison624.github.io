@@ -1,18 +1,56 @@
 import React from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ColmarAcademy from "../../images/ColmarAcademy.png";
 import FindYourHat from "../../images/FindYourHat.png";
 import NumberGuesser from "../../images/NumberGuesser.png";
 import Jammming from "../../images/Jammming.png";
 import ToDoList from "../../images/ToDoList.png";
+import $ from "jquery";
 import "./ProjectList.css";
 
 export default function Project() {
+  
+  const [projectList, setProjectList] = useState({
+    pjTitle: "",
+    pjDetail: "",
+  });
+
+  const [isVisible, setVisible] = useState(false);
+  const domRef = React.useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // In your case there's only one element to observe:
+        if (entries[0].isIntersecting) {
+          // Not possible to set it back to false like this:
+          setVisible(true);
+
+          // No need to keep observing:
+          observer.unobserve(domRef.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "1500px",
+        threshold: 0.1,
+      }
+    );
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+
   return (
     <div className="projectList">
       <span>──────&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Side Project</span>
       <div className="sideProjectList">
-        <div id="colmarAcademy" className="sideProject">
+        <div
+          id="colmarAcademy"
+          ref={domRef}
+          className={`sideProject fade-in-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+        >
           <div className="sideProject-text">
             <h3>Colmar Academy</h3>
             <p>
@@ -29,7 +67,13 @@ export default function Project() {
             <img src={ColmarAcademy} alt="Colmar Academy Side Project" />
           </div>
         </div>
-        <div id="findYourHat" className="sideProject">
+        <div
+          id="findYourHat"
+          ref={domRef}
+          className={`sideProject fade-in-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+        >
           <div className="sideProject-img">
             <img src={FindYourHat} alt="Find Your Hat Side Project" />
           </div>
@@ -47,7 +91,13 @@ export default function Project() {
             </Link>
           </div>
         </div>
-        <div id="numberGuesser" className="sideProject">
+        <div
+          id="numberGuesser"
+          ref={domRef}
+          className={`sideProject fade-in-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+        >
           <div className="sideProject-text">
             <h3>Number Guesser</h3>
             <p>
@@ -64,7 +114,13 @@ export default function Project() {
             <img src={NumberGuesser} alt="Number Guesser Side Project" />
           </div>
         </div>
-        <div id="jammming" className="sideProject">
+        <div
+          id="jammming"
+          ref={domRef}
+          className={`sideProject fade-in-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+        >
           <div className="sideProject-img">
             <img src={Jammming} alt="Jammming Side Project" />
           </div>
@@ -72,17 +128,24 @@ export default function Project() {
             <h3>Jammming</h3>
             <p>
               In this side project, I build a React web application called
-              Jammming. I use React components, passing state,
-              and requests with the Spotify API to build a website that allows
-              users to search the Spotify library, create a custom playlist,
-              then save it to their Spotify account. 
+              Jammming. I use React components, passing state, and requests with
+              the Spotify API to build a website that allows users to search the
+              Spotify library, create a custom playlist, then save it to their
+              Spotify account.
             </p>
             <Link to="#" className="readMore-btn">
               Read More
             </Link>
           </div>
         </div>
-        <div id="toDoList" className="sideProject" style={{padding:'10px'}}>
+        <div
+          id="toDoList"
+          ref={domRef}
+          className={`sideProject fade-in-section ${
+            isVisible ? "is-visible" : ""
+          }`}
+          style={{ padding: "10px" }}
+        >
           <div className="sideProject-text">
             <h3>To Do List</h3>
             <p>

@@ -1,4 +1,3 @@
-
 .projectList {
   padding-top: 51px;
 }
@@ -24,17 +23,14 @@
   margin: 125px 0px;
   justify-content: space-between;
   position: relative;
-  align-items: center; 
+  align-items: center;
 }
 
 .sideProject-text {
   position: relative;
   width: 40%;
   transition: 0.75s;
-}
-
-.sideProject-text:hover{
-  padding-bottom: 10px;
+  position: relative;
 }
 
 .sideProject-text p {
@@ -45,10 +41,9 @@
 }
 
 .sideProject-img {
-  width:55%;
+  width: 55%;
   display: block;
   max-width: 500px;
-  
 }
 
 .sideProject-img img {
@@ -57,18 +52,18 @@
   box-shadow: 0 4px 50px 0 rgba(97, 97, 94, 0.75);
   background-size: cover;
   border-radius: 5px;
-  cursor: pointer;  
-  transition: all 0.6s;  
+  cursor: pointer;
+  transition: all 0.6s;
 }
 
-.sideProject-img img:hover{
+.sideProject-img img:hover {
   transform: scale(1.1);
 }
 
 .readMore-btn {
   padding: 10px;
   background: #ffc340;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 4px 15px 0 rgba(151, 155, 155, 0.5);
   transition: border-radius 2s;
@@ -82,16 +77,30 @@
   border-top-right-radius: 10px;
 }
 
-
 #colmarAcademy {
   margin-top: 80px;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: 1s;
+  transform: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 @media screen and (max-width: 991px) {
   .project {
     padding: 24px;
   }
-  .sideProject-text p{
+  .sideProject-text p {
     font-size: 14px;
     line-height: 1.75rem;
   }
@@ -101,5 +110,11 @@
   .sideProject-img img {
     width: 350px;
     height: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sideProject-text:hover {
+    padding-bottom: 40px;
   }
 }
