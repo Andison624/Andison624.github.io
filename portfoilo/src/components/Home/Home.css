@@ -67,29 +67,58 @@
   font-size: 75px;
   line-height: 72px;
   font-weight: 700;
-  text-transform: capitalize;
   margin-bottom: 96px;
+  display: inline-block;
+  animation-play-state: running;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
 }
 
-.homeLinkText:hover {
-  color: #111;
-  font-weight: bold;
-  text-shadow: 1px 1px white, -1px -1px #444;
-  transition: 0.5s;
+.line-2.hovered {
+  animation-name: rubberBand;
 }
 
-.homeLinkText2 {
-  padding: 20px 0px 5px 0px;
-  font-weight: 700;
-  color: #111;
-  box-sizing: inherit;
-  border-bottom: 3px solid #111;
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    -ms-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    -ms-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
-
-.homeLinkText2:hover{
-  box-sizing: inherit;
-  border-bottom:12px solid #111;
-  transition: 0.25s;
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
 }
 
 @media screen and (max-width: 991px) {
