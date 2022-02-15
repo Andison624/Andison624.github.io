@@ -1,38 +1,36 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect } from "react";
 import "./Home.css";
 
 export default function Home() {
-  const line2Data = [
-    { str: "I" },
-    { str: " " },
-    { str: "L" },
-    { str: "e" },
-    { str: "a" },
-    { str: "r" },
-    { str: "n" },
-    { str: "," },
-    { str: " " },
-    { str: "C" },
-    { str: "o" },
-    { str: "d" },
-    { str: "e" },
-    { str: " " },
-    { str: "&" },
-    { str: " " },
-    { str: "P" },
-    { str: "l" },
-    { str: "a" },
-    { str: "y" },
-    { str: "!" },
-  ];
-
-  const [hovered, setHovered] = useState(false);
-  const toggleClassName = () => {
-    setHovered(true);
-    setTimeout(() => setHovered(false), 2000);
-  };
+  useEffect(() => {
+      // https://github.com/bartzalewski/rubber-band-effect
+      const textEl = document.querySelector(".rubber-band");
+      if (textEl) {
+        const text = textEl.textContent;
+        const swap = text.replace(/\s/g, " ");
+        const letters = swap.split("");
+        const makeSpan = (letter) =>
+          `<span class="rubber-span">${letter}</span>`;
+        let html = "";
+        letters.forEach((letter) => (html += makeSpan(letter)));
+        textEl.innerHTML = html;
+      }
+      const spans = document.querySelectorAll(".rubber-span");
+      spans.forEach((span) => {
+        span.addEventListener("mouseover", () =>
+          span.classList.add("animated", "rubberBand")
+        );
+      });
+      spans.forEach((span) =>
+        span.addEventListener("mouseout", () =>
+          setTimeout(() => {
+            span.classList.remove("animated", "rubberBand");
+          }, 1000)
+        )
+      );
+  },[]);
 
   return (
     <div className="home">
@@ -46,16 +44,7 @@ export default function Home() {
         </Link>
       </h1>
       <div className="line-2-text">
-        {line2Data.map((line2) => {
-          return (
-            <h1
-              className={`line-2 ${hovered? "hovered": ''}`}
-              onMouseEnter={toggleClassName}
-            >
-              {line2.str}
-            </h1>
-          );
-        })}
+        <h1 className="line-2 rubber-band">I Learn, Code & Play!</h1>
       </div>
       <div>
         <p>

@@ -63,18 +63,15 @@
 .readMore-btn {
   padding: 10px;
   background: #ffc340;
-  color: #ffffff;
+  color: #000000;
   border-radius: 5px;
   box-shadow: 0 4px 15px 0 rgba(151, 155, 155, 0.5);
-  transition: border-radius 2s;
-  -webkit-transition: border-radius 2s;
+  transition:  0.75s;
+  -webkit-transition: 0.75s;
 }
 
 .readMore-btn:hover {
-  border-bottom-right-radius: 50px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
+  color: #FFFFFF;
 }
 
 #colmarAcademy {

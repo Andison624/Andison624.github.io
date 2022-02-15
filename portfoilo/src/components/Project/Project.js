@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import { useState  } from "react";
+import "./Project.css";
 
 export default function Project() {
+ 
+
+
   return (
-    <div>Project</div>
-  )
+    <div>
+
+    </div>
+  );
 }
