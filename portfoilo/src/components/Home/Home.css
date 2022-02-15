@@ -186,6 +186,9 @@
   .home {
     padding: 24px;
   }
+  .home p{
+    font-size: 0.9em;
+  }
   .line1 {
     font-size: 34px;
   }
