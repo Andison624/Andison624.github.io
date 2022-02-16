@@ -1,6 +1,7 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import ProjectList from '../ProjectList/ProjectList.js';
 import "./Home.css";
 
 export default function Home() {
@@ -33,7 +34,8 @@ export default function Home() {
   },[]);
 
   return (
-    <div className="home">
+    <div /* className="home" */>
+      <div className="home">
       <h1 className="line-1">
         <span className="wave" role="img" aria-labelledby="wave">
           👋🏻
@@ -59,6 +61,8 @@ export default function Home() {
           </Link>
         </p>
       </div>
+      </div>
+      <ProjectList/>
     </div>
   );
 }

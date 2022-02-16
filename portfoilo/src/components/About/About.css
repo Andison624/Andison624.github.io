@@ -1,0 +1,38 @@
+#about {
+  /* background: #ffc340; */
+  background: #fff9dd;
+  padding: 36px;
+  padding-bottom: 46px;
+}
+
+.about-inner {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.resume-btn {
+  padding: 10px 20px;
+  background: #ffc340;
+  color: #000000;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px 0 rgba(151, 155, 155, 0.5);
+  cursor: pointer;
+  background-size: cover;
+  transition: all 0.75s;
+  -webkit-transition: all 0.75s;
+}
+
+.resume-btn:hover {
+    color: #F1F1F1F1;
+}
+
+@media screen and (max-width: 991px) {
+  #about {
+    padding: 24px;
+    padding-bottom: 34px;
+  }
+  .about-inner {
+    margin: 0px;
+  }
+}
