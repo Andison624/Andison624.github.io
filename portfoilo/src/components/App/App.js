@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRef } from "react";
-import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
+import { useParams, Routes, Route, BrowserRouter } from "react-router-dom";
 import ProjectList from "../ProjectList/ProjectList.js";
 import Home from "../Home/Home.js";
 import NavBar from "../NavBar/NavBar.js";

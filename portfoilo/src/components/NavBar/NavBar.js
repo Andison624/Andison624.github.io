@@ -26,9 +26,9 @@ export default function NavBar() {
               <Link to="#">Case 5</Link>
             </div>
           </div>
-          <Link to="#" className="title">
+          <a download="AndisonSuen.pdf" href="portfoilo\src\components\NavBar\AndisonSuen.pdf" className="title">
           Resume
-          </Link>
+          </a>
           <Link to="/about" className="title">
             About
           </Link>
