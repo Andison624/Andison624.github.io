@@ -2,13 +2,13 @@ import React from "react";
 import { useState  } from "react";
 import "./Project.css";
 
-export default function Project() {
+export default function ProjectOne() {
  
 
 
   return (
-    <div>
-
+    <div id="projectOne">
+      1
     </div>
   );
 }

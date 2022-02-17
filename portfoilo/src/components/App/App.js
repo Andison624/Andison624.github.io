@@ -5,7 +5,7 @@ import ProjectList from "../ProjectList/ProjectList.js";
 import Home from "../Home/Home.js";
 import NavBar from "../NavBar/NavBar.js";
 import About from "../About/About.js";
-import Project from "../Project/Project.js";
+import ProjectOne from "../Project/ProjectOne.js";
 import Footer from "../Footer/Footer.js";
 import "./App.css";
 
@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projectList" element={<ProjectList />} />
-        <Route path="/project" element={<Project />} />
+        <Route path="/projectOne" element={<ProjectOne />} />
       </Routes>
       <Footer />
     </BrowserRouter>

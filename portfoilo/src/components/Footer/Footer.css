@@ -2,7 +2,12 @@
     background: #f5f5f5;
 }
 
+.contact {
+    width: 50%;
+}
+
 .contact h3{
+    font-size: 36px;
     transition: 0.5s;
 }
 

@@ -19,11 +19,11 @@ export default function NavBar() {
           <div className="dropdown">
             <span className="dropbtn title">SideProject&nbsp;<i class="fa-solid fa-caret-down"></i></span>
             <div className="dropdown-content">
-              <Link to="#">Case 1</Link>
-              <Link to="#">Case 2</Link>
-              <Link to="#">Case 3</Link>
-              <Link to="#">Case 4</Link>
-              <Link to="#">Case 5</Link>
+              <Link to="/projectOne">Case 1</Link>
+              <Link to="/projectTwo">Case 2</Link>
+              <Link to="/projectThree">Case 3</Link>
+              <Link to="/projectFour">Case 4</Link>
+              <Link to="/projectFive">Case 5</Link>
             </div>
           </div>
           <a download="AndisonSuen.pdf" href="portfoilo\src\components\NavBar\AndisonSuen.pdf" className="title">
