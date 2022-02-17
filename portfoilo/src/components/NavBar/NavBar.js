@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import cv from "./AndisonSuen.pdf";
 import "./NavBar.css";
 
 export default function NavBar() {
@@ -26,7 +27,7 @@ export default function NavBar() {
               <Link to="/projectFive">Case 5</Link>
             </div>
           </div>
-          <a download="AndisonSuen.pdf" href="portfoilo\src\components\NavBar\AndisonSuen.pdf" className="title">
+          <a href={cv}  target="_blank" className="title">
           Resume
           </a>
           <Link to="/about" className="title">

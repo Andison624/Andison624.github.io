@@ -56,7 +56,7 @@ export default function Home() {
           different things. Currently, I'm looking for a job related to web
           development.
           <br />
-          <Link to="#" className="homeLinkText2">
+          <Link to=".footer" className="homeLinkText2">
             Contact me
           </Link>
         </p>

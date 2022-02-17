@@ -1,4 +1,5 @@
 import React from "react";
+import cv from '../NavBar/AndisonSuen.pdf';
 import "./About.css";
 
 export default function About() {
@@ -18,7 +19,7 @@ export default function About() {
           prepared me to handle the challenging demands in an Agile IT
           development environment.
         </p>
-        <span className="resume-btn">Resume</span>
+        <a href={cv} target="_blank" className="resume-btn">Resume</a>
       </div>
       <div>
         <h1></h1>
