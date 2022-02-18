@@ -87,41 +87,29 @@ export default function Project() {
               <div className="sideProject-text">
                 <h3>{pj.pjTitle}</h3>
                 <p>{pj.pjDetail}</p>
-                {/* <Link to={pj.link} className="readMore-btn">
+                <Link to={pj.link} className="readMore-btn">
                   Read More
-                </Link> */}
-                <a href={pj.link} className="readMore-btn">
-                  Read More
-                </a>
+                </Link>
               </div>
               <div className="sideProject-img">
-                {/* <Link to={pj.link}>
+                <Link to={pj.link}>
                   <img href={pj.link} src={pj.src} alt={pj.alt} />
-                </Link> */}
-                <a href={pj.link}>
-                  <img href={pj.link} src={pj.src} alt={pj.alt} />
-                </a>
+                </Link>
               </div>
             </div>
           ) : (
             <div id={pj.id} className="sideProject reveal">
               <div className="sideProject-img">
-                {/* <Link to={pj.link}>
+                <Link to={pj.link}>
                   <img src={pj.src} alt={pj.alt} />
-                </Link> */}
-                <a href={pj.link}>
-                  <img src={pj.src} alt={pj.alt} />
-                </a>
+                </Link>
               </div>
               <div className="sideProject-text">
                 <h3>{pj.pjTitle}</h3>
                 <p>{pj.pjDetail}</p>
-                {/* <Link to={pj.link} className="readMore-btn">
+                <Link to={pj.link} className="readMore-btn">
                   Read More
-                </Link> */}
-                <a href={pj.link} className="readMore-btn">
-                  Read More
-                </a>
+                </Link>
               </div>
             </div>
           );

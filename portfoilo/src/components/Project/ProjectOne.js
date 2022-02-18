@@ -1,9 +1,13 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect } from "react";
 import colmarAcademySpec from "../../images/colmar-academy-spec.png";
 import "./Project.css";
 
 export default function ProjectOne() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div id="projectOne">
       <div className="project-inner">
@@ -80,9 +84,20 @@ export default function ProjectOne() {
         <div className="project-footer">
           <div className="project-footer-inner">
             <h3>RESULTS AND TAKEAWAYS</h3>
-            <p>With the popularity of 3G, more and more people are using mobile phones to access the Internet. Mobile devices are overtaking desktop devices as the most common terminals to access the Internet.This project allowed me to be exposed to this concept, which I believe can be applied to future projects.</p>
-            <h5><i>Some key takeaways from this project are:</i></h5>
-            <li>As getting into bootstrap, I learned about the convenience of framework</li>
+            <p>
+              With the popularity of 3G, more and more people are using mobile
+              phones to access the Internet. Mobile devices are overtaking
+              desktop devices as the most common terminals to access the
+              Internet.This project allowed me to be exposed to this concept,
+              which I believe can be applied to future projects.
+            </p>
+            <h5>
+              <i>Some key takeaways from this project are:</i>
+            </h5>
+            <li>
+              As getting into bootstrap, I learned about the convenience of
+              framework
+            </li>
             <li>Search the responsive profile, know-how does its importanc</li>
           </div>
         </div>

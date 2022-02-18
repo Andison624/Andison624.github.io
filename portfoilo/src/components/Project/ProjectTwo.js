@@ -1,8 +1,12 @@
 import React from "react";
+import { useEffect } from "react";
 import findYourHatGif from "../../images/find-your-hat-demo.gif";
 import "./Project.css";
 
 export default function ProjectTwo() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div id="projectTwo">
       <div className="project-inner">

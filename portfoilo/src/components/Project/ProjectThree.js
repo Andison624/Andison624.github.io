@@ -1,8 +1,12 @@
 import React from "react";
+import { useEffect } from "react";
 import NumberGuesser from "../../images/numberGuesserSpec.png";
 import "./Project.css";
 
 export default function ProjectThree() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div id="projectThree">
       <div className="project-inner">

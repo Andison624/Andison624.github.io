@@ -1,7 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 import "./Project.css";
 
 export default function ProjectFour() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div id="projectFour">
       <div className="project-inner">
