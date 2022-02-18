@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.1dde94e2.css",
-    "main.js": "/static/js/main.f62ebc89.js",
+    "main.css": "/static/css/main.6f3865f8.css",
+    "main.js": "/static/js/main.5fee09ee.js",
     "static/media/colmar-academy-spec.png": "/static/media/colmar-academy-spec.0569bbdeef6b739d0db6.png",
     "static/media/ColmarAcademy.png": "/static/media/ColmarAcademy.d007b12978aa39dd1661.png",
     "static/media/Jammming.png": "/static/media/Jammming.dd1fd32d1f5259e28847.png",
     "static/media/find-your-hat-demo.gif": "/static/media/find-your-hat-demo.c14a2468ee3cd678e428.gif",
     "static/media/ToDoList.png": "/static/media/ToDoList.688a75610dedcd60b664.png",
     "static/media/AndisonSuen.pdf": "/static/media/AndisonSuen.f653173005d1e75692da.pdf",
+    "static/media/1stDemo.png": "/static/media/1stDemo.fd24f67db9e701c669c0.png",
+    "static/media/jammmingSpotify.png": "/static/media/jammmingSpotify.6bf2e386a0cbd788f404.png",
+    "static/media/2ndDemo.png": "/static/media/2ndDemo.8fcacd1e8fcddffc80d7.png",
+    "static/media/wireframes.png": "/static/media/wireframes.c3ea9c8e4550d6214a60.png",
     "static/media/NumberGuesser.png": "/static/media/NumberGuesser.dffa5c87e1c1d18f7514.png",
     "static/media/numberGuesserSpec.png": "/static/media/numberGuesserSpec.cade60c2b273c866c2e3.png",
     "static/media/email.png": "/static/media/email.edde96781f1253399d92.png",
     "index.html": "/index.html",
-    "main.1dde94e2.css.map": "/static/css/main.1dde94e2.css.map",
-    "main.f62ebc89.js.map": "/static/js/main.f62ebc89.js.map"
+    "main.6f3865f8.css.map": "/static/css/main.6f3865f8.css.map",
+    "main.5fee09ee.js.map": "/static/js/main.5fee09ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dde94e2.css",
-    "static/js/main.f62ebc89.js"
+    "static/css/main.6f3865f8.css",
+    "static/js/main.5fee09ee.js"
   ]
 }
