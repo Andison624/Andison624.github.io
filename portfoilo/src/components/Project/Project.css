@@ -75,6 +75,10 @@
   margin-bottom: 18px;
 }
 
+.project-body-inner-3 h3 {
+  margin-top: 100px;
+}
+
 .project-head-inner span {
   width: fit-content;
   padding: 5px 15px;
@@ -90,6 +94,10 @@
 
 .project-head-inner span:hover {
   color: #ffffff;
+}
+
+.skills {
+  margin: 20px;
 }
 
 .project-body-inner h3 {
@@ -115,6 +123,12 @@
 .project-footer-inner li {
   margin-top: 10px;
 }
+
+.project-footer-inner i {
+  color: black;
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: 991px) {
   .project-title-inner,

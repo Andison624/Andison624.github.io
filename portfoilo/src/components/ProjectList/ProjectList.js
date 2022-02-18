@@ -11,7 +11,7 @@ import "./ProjectList.css";
 import { Link } from "react-router-dom";
 
 export default function Project() {
-  const pjData = [
+  const pjListData = [
     {
       id: "colmarAcademy",
       pjTitle: "Colmar Academy",
@@ -20,6 +20,7 @@ export default function Project() {
       src: ColmarAcademy,
       alt: "Colmar Academy Side Project",
       link: "/projectOne",
+      s: "123"
     },
     {
       id: "findYourHat",
@@ -81,7 +82,7 @@ export default function Project() {
         ──────&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Side Project
       </span>
       <div className="sideProjectList">
-        {pjData.map((pj, col) => {
+        {pjListData.map((pj, col) => {
           return col % 2 == 0 ? (
             <div id={pj.id} className="sideProject reveal">
               <div className="sideProject-text">

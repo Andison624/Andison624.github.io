@@ -89,15 +89,14 @@ export default function ProjectThree() {
           <div className="project-footer-inner">
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-              
+            In fact, this project is less difficult than the projects I have done before, mainly because it allows me to mix HTML, CSS, and JavaScript, as well as understand how to use Math
             </p>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
             <li>
-              
+            When taking a method name, you need to use a name that is easy to understand the method of the function
             </li>
-            <li></li>
           </div>
         </div>
       </div>
