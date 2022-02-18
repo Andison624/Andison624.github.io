@@ -8,6 +8,7 @@ import Jammming from "../../images/Jammming.png";
 import ToDoList from "../../images/ToDoList.png";
 
 import "./ProjectList.css";
+import { Link } from "react-router-dom";
 
 export default function Project() {
   const pjData = [
@@ -24,7 +25,7 @@ export default function Project() {
       id: "findYourHat",
       pjTitle: "Find Your Hat",
       pjDetail:
-      "This is my first side project after learning JavaScript, only using four patterns and JS language to create this mini-game that can run in a terminal. To add challenges, in addition to the project requirements, I added Hardmode to make this mini-game more  interesting.",
+        "This is my first side project after learning JavaScript, only using four patterns and JS language to create this mini-game that can run in a terminal. To add challenges, in addition to the project requirements, I added Hardmode to make this mini-game more  interesting.",
       src: FindYourHat,
       alt: "Find Your Hat Side Project",
       link: "/projectTwo",
@@ -33,7 +34,7 @@ export default function Project() {
       id: "numberGuesser",
       pjTitle: "Number Guesser",
       pjDetail:
-      "A little game that mixed the HTML5, CSS, and JavaScript languages. I learned, this game is the system randomly picks a number, then the player and the computer each pick a number, and the party closest to the system's random number wins.",
+        "A little game that mixed the HTML5, CSS, and JavaScript languages. I learned, this game is the system randomly picks a number, then the player and the computer each pick a number, and the party closest to the system's random number wins.",
       src: NumberGuesser,
       alt: "Number Guesser Side Project",
       link: "/projectThree",
@@ -42,7 +43,7 @@ export default function Project() {
       id: "jammming",
       pjTitle: "Jammming",
       pjDetail:
-      "In this side project, I build a React web application called. Jammming. I use React components, passing state, and requests with the Spotify API to build a website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.",
+        "In this side project, I build a React web application called. Jammming. I use React components, passing state, and requests with the Spotify API to build a website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.",
       src: Jammming,
       alt: "Jammming Side Project",
       link: "/projectFour",
@@ -51,7 +52,7 @@ export default function Project() {
       id: "toDoList",
       pjTitle: "To Do List",
       pjDetail:
-      "It's a one-month side project by three people, that uses all the knowledge I've learned, starting with design, exchanging ideas with team members, and sharing suggestions, a web app that can really be used by others.",
+        "It's a one-month side project by three people, that uses all the knowledge I've learned, starting with design, exchanging ideas with team members, and sharing suggestions, a web app that can really be used by others.",
       src: ToDoList,
       alt: "To Do List Side Project",
       link: "/projectFive",
@@ -86,11 +87,17 @@ export default function Project() {
               <div className="sideProject-text">
                 <h3>{pj.pjTitle}</h3>
                 <p>{pj.pjDetail}</p>
+                {/* <Link to={pj.link} className="readMore-btn">
+                  Read More
+                </Link> */}
                 <a href={pj.link} className="readMore-btn">
                   Read More
                 </a>
               </div>
               <div className="sideProject-img">
+                {/* <Link to={pj.link}>
+                  <img href={pj.link} src={pj.src} alt={pj.alt} />
+                </Link> */}
                 <a href={pj.link}>
                   <img href={pj.link} src={pj.src} alt={pj.alt} />
                 </a>
@@ -99,6 +106,9 @@ export default function Project() {
           ) : (
             <div id={pj.id} className="sideProject reveal">
               <div className="sideProject-img">
+                {/* <Link to={pj.link}>
+                  <img src={pj.src} alt={pj.alt} />
+                </Link> */}
                 <a href={pj.link}>
                   <img src={pj.src} alt={pj.alt} />
                 </a>
@@ -106,6 +116,9 @@ export default function Project() {
               <div className="sideProject-text">
                 <h3>{pj.pjTitle}</h3>
                 <p>{pj.pjDetail}</p>
+                {/* <Link to={pj.link} className="readMore-btn">
+                  Read More
+                </Link> */}
                 <a href={pj.link} className="readMore-btn">
                   Read More
                 </a>
