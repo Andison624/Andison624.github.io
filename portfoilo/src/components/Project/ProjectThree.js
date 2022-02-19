@@ -115,6 +115,22 @@ export default function ProjectThree() {
               done before, mainly because it allows me to mix HTML, CSS, and
               JavaScript, as well as understand how to use Math
             </p>
+            <a
+              href="https://github.com/Andison624/Number-Guesser"
+              target="_blank"
+              rel="NumberGuesser"
+              className="project-footer-btn-one"
+            >
+              VIEW CODE
+            </a>
+            <a
+              href="https://andison624.github.io/Number-Guesser/"
+              target="_blank"
+              rel="NumberGuesser"
+              className="project-footer-btn-two"
+            >
+              VIEW DEMO
+            </a>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>

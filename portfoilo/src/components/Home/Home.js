@@ -41,7 +41,7 @@ export default function Home() {
           👋🏻
         </span>
         Hi, I'm{" "}
-        <Link to="#" className="myName homeLinkText">
+        <Link to="/about" className="myName homeLinkText">
           Andison
         </Link>
       </h1>

@@ -149,6 +149,21 @@
   margin-top: 30px;
 }
 
+.project-footer-btn-one,
+.project-footer-btn-two {
+  border-bottom: 2px solid black;
+  transition: 0.5s;
+}
+
+.project-footer-btn-two {
+  margin: 0 12px;
+}
+
+.project-footer-btn-one:hover, .project-footer-btn-two:hover{
+  color: black;
+  border-bottom: 4px solid black;
+}
+
 .fa-angles-right,
 .fa-angles-left {
   font-size: 80px;

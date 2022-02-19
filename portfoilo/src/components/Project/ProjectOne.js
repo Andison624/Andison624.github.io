@@ -97,6 +97,22 @@ export default function ProjectOne() {
               Internet.This project allowed me to be exposed to this concept,
               which I believe can be applied to future projects.
             </p>
+            <a
+              href="https://github.com/Andison624/Capstone-ColmarAssets"
+              target="_blank"
+              rel="ColmarAssets"
+              className="project-footer-btn-one"
+            >
+              VIEW CODE
+            </a>
+            <a
+              href="https://andison624.github.io/Capstone-ColmarAssets/"
+              target="_blank"
+              rel="ColmarAssets"
+              className="project-footer-btn-two"
+            >
+              VIEW DEMO
+            </a>
             <h5>
               <i className="takeaways">
                 Some key takeaways from this project are:

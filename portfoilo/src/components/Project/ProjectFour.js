@@ -97,11 +97,23 @@ export default function ProjectFour() {
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
             <p>
-            The main goal of this project was to understand how apis worked, but I needed to complete the entire web app framework before writing the API. I used the HTML and CSS provided by the project and then used react to create different classes. Since I had completed some SIDE PROJECTs for REACT before starting this project, it wasn't difficult to create the react part.
+              The main goal of this project was to understand how apis worked,
+              but I needed to complete the entire web app framework before
+              writing the API. I used the HTML and CSS provided by the project
+              and then used react to create different classes. Since I had
+              completed some SIDE PROJECTs for REACT before starting this
+              project, it wasn't difficult to create the react part.
             </p>
             <h1>SOLUTION</h1>
             <p>
-            I understand the versatility and role of APIs, so I want to learn how to use APIs, like the most commonly used Google Map API. The difficulty of the API is more difficult than I expected, Spotify provides teaching, I follow the steps to write to make the API work, but I don't understand how the API works. Without teaching, I wouldn't be able to introduce APIs from scratch. To this end, I have added a lot of comments to the FUNCTION, leaving it for reference when you need to use the API later.
+              I understand the versatility and role of APIs, so I want to learn
+              how to use APIs, like the most commonly used Google Map API. The
+              difficulty of the API is more difficult than I expected, Spotify
+              provides teaching, I follow the steps to write to make the API
+              work, but I don't understand how the API works. Without teaching,
+              I wouldn't be able to introduce APIs from scratch. To this end, I
+              have added a lot of comments to the FUNCTION, leaving it for
+              reference when you need to use the API later.
             </p>
             <img src={commentOne}></img>
             <img src={commentTwo}></img>
@@ -119,7 +131,25 @@ export default function ProjectFour() {
               </a>{" "}
               to use it, otherwise, a 403 error will be displayed.
             </p>
-            <img src={jammmingSpotify}></img>
+            <div>
+              <img src={jammmingSpotify}></img>
+            </div>
+            <a
+              href="https://github.com/Andison624/Jammming"
+              target="_blank"
+              rel="jammming"
+              className="project-footer-btn-one"
+            >
+              VIEW CODE
+            </a>
+            <a
+              href="https://andison624.github.io/Jammming/"
+              target="_blank"
+              rel="jammming"
+              className="project-footer-btn-two"
+            >
+              VIEW DEMO
+            </a>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>

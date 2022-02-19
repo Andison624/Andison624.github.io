@@ -108,6 +108,14 @@ export default function ProjectTwo() {
               classes, it is easier for me to learn to react by relying on what
               I learned in this project.
             </p>
+            <a
+              href="https://github.com/Andison624/Find-Your-Hat"
+              target="_blank"
+              rel="Find-Your-Hat"
+              className="project-footer-btn-one"
+            >
+              VIEW CODE
+            </a>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>

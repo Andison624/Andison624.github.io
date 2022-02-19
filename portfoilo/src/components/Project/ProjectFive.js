@@ -182,11 +182,11 @@ export default function ProjectFive() {
               the part of our handle and added some additional features to make
               the entire Web app more complete and beautiful. In fact, I have not participated in the two parts of data and test, and do not understand how it actually works. Therefore, in the future, I need to check related articles to increase my knowledge.
             </p>
-{/*             <a
-              href="https://andison624.github.io/ToDoList/"
+            <a
+              href="https://github.com/Andison624/ToDoList"
               target="_blank"
               rel="toDoList"
-              className="project-title-btn"
+              className="project-footer-btn-one"
             >
               VIEW CODE
             </a>
@@ -194,10 +194,10 @@ export default function ProjectFive() {
               href="https://andison624.github.io/ToDoList/"
               target="_blank"
               rel="toDoList"
-              className="project-title-btn"
+              className="project-footer-btn-two"
             >
               VIEW DEMO
-            </a> */}
+            </a>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
