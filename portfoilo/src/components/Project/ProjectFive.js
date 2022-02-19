@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import wireframes from "../../images/wireframes.png";
 import DemoOne from "../../images/1stDemo.png";
@@ -115,6 +116,64 @@ export default function ProjectFive() {
         </div>
         <div className="project-footer">
           <div className="project-footer-inner">
+            <h1>PROCESS</h1>
+            <p>
+              Before the coding starts, we'll discuss the necessary features of
+              the to-do list, as well as the extra features we want to add.
+              After drawing the wireframe of the to-do list, we built the
+              framework using HTML, CSS, and bootstrap. For added convenience,
+              we used React .js to make the project instead, and React.Hook
+              replaced React.Component and React-bootstrap instead of bootstrap.
+              Next, work is assigned to work on the project.
+            </p>
+            <h1>SOLUTION</h1>
+            <p>
+              After I co-organized the general framework with the team members,
+              I began the functional part that I was responsible for. I pick
+              some of the more special parts that I am responsible for to
+              illustrate. The first is the add task function, I used useState to
+              place the Task data, facilitate the team member in charge of the
+              data to change, and use .map to loop out each new task.
+            </p>
+            <p>
+              The second is the update task function, at the beginning, I was
+              going to use the bootstrap top up the screen to present this
+              function, just considering that my add task function is not using
+              the top up screen to display. Finally, I used the pen img in the
+              task to directly update the information in the task.
+            </p>
+            <p>
+              The next feature I'm going to say is to display the task as done
+              after tapping and to delete the don's task. Clicking on the task
+              shows as a don, is the most important feature of the entire to do
+              list, so I chose a tick button and changed the task's title to a
+              light color as well as added a delete symbol to present this
+              function. I used className to add done to accomplish this. As for
+              the deletion function, it is to determine whether the task has a
+              done className, and if it is displayed as true, it will be
+              deleted.
+            </p>
+            <p>
+              After the team member responsible for writing the data completed
+              the local data, I started to write the search function. I wrote it
+              using the search function I learned from the last jammming
+              project. Since it is not an API, I need to write the actual search
+              function myself, I use it to determine whether the length of the
+              search input is 0 to perform this function. When there is nothing
+              in the input bar, all tasks are displayed. When there is input,
+              the task title is searched, and only tasks with the same text are
+              displayed.
+            </p>
+            <p>
+              Finally, there are some interesting features that I decided to
+              add, which are sidebar and dark mode. Sidebar is very commonly
+              used, so I took the opportunity to add them. Dark mode has also
+              been a very popular feature lately, so I tried it out as well.
+              Interestingly, after using jQuery to complete the dark mode, I
+              found a more convenient way to write it, which is CSS custom
+              properties. I should try this feature next time I need to use
+              similar CSS.
+            </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
               The project was conducted in small groups, which gave me an idea
@@ -123,6 +182,22 @@ export default function ProjectFive() {
               the part of our handle and added some additional features to make
               the entire Web app more complete and beautiful.
             </p>
+{/*             <a
+              href="https://andison624.github.io/ToDoList/"
+              target="_blank"
+              rel="toDoList"
+              className="project-title-btn"
+            >
+              VIEW CODE
+            </a>
+            <a
+              href="https://andison624.github.io/ToDoList/"
+              target="_blank"
+              rel="toDoList"
+              className="project-title-btn"
+            >
+              VIEW DEMO
+            </a> */}
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
@@ -134,6 +209,9 @@ export default function ProjectFive() {
               I learned to use Figma to paint sitemaps before creating a web app
             </li>
           </div>
+          <Link to="/projectFour">
+            <i className="fa-solid fa-angles-left"></i>
+          </Link>
         </div>
       </div>
     </div>

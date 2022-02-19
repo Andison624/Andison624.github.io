@@ -1,17 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
+import {Link} from "react-router-dom";
 import colmarAcademySpec from "../../images/colmar-academy-spec.png";
-import findYourHatGif from "../../images/find-your-hat-demo.gif";
-import numberGuesser from "../../images/numberGuesserSpec.png";
-import jammming from "../../images/Jammming.png";
-import jammmingSpotify from "../../images/jammmingSpotify.png";
-import wireframes from "../../images/wireframes.png";
-import demoOne from "../../images/1stDemo.png";
-import demoTwo from "../../images/2ndDemo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Project.css";
 
 export default function ProjectOne() {
- 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -91,6 +85,10 @@ export default function ProjectOne() {
         </div>
         <div className="project-footer">
           <div className="project-footer-inner">
+            <h1>PROCESS</h1>
+            <p>At the beginning of the project, when I learned that the project only needed to be done using HTML and CSS, I thought it was very simple and only took a little time to complete.It's just that when I was coding, I found that the size provided by the project was different from the actual size of the pictures provided by the project, which made me a bit confused.In addition, in the use of CSS, I found that I was not as skilled as I thought.</p>
+            <h1>SOLUTION</h1>
+            <p>While searching the information, I found the web framework software, that pre-picks some of the kits that will be used in writing web applications and gives the project the initial architecture. In the end, I chose bootstrap to complete the project, and after understanding the concepts of col and row, the project was easily completed.</p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
               With the popularity of 3G, more and more people are using mobile
@@ -100,7 +98,9 @@ export default function ProjectOne() {
               which I believe can be applied to future projects.
             </p>
             <h5>
-              <i>Some key takeaways from this project are:</i>
+              <i className="takeaways">
+                Some key takeaways from this project are:
+              </i>
             </h5>
             <li>
               As getting into bootstrap, I learned about the convenience of
@@ -108,6 +108,9 @@ export default function ProjectOne() {
             </li>
             <li>Search the responsive profile, know-how does its importanc</li>
           </div>
+          <Link to="/projectTwo">
+            <i className="fa-solid fa-angles-right"></i>
+          </Link>
         </div>
       </div>
     </div>

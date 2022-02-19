@@ -1,12 +1,13 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import NumberGuesser from "../../images/numberGuesserSpec.png";
 import "./Project.css";
 
 export default function ProjectThree() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="projectThree">
       <div className="project-inner">
@@ -87,17 +88,47 @@ export default function ProjectThree() {
         </div>
         <div className="project-footer">
           <div className="project-footer-inner">
+            <h1>PROCESS</h1>
+            <p>
+              The difference between this project and the FindYourHat project is
+              that it operates on the browser, not the terminal. While it
+              requires additional HTML and CSS to create, it's not as difficult
+              as FindYourHat. Therefore, in order to add some fun, I added some
+              features to the design of the game to make it more convenient for
+              users.
+            </p>
+            <h1>SOLUTION</h1>
+            <p>
+              First, I added a button so that when the guessing numbers game is
+              over, you can refresh the game with an on-click button without
+              refreshing the entire web page. Secondly, I added the concept of
+              rounds, where one side can get points after winning, renaming the
+              refreshed button to the next round, and clicking on it to inherit
+              the score to the next round. Finally, since the number of random
+              is only between 0 and 9 when the player picks numbers below 0 and
+              above 9, I set a pop-up prompt telling the player that they must
+              pick a number between 0 and 9.
+            </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-            In fact, this project is less difficult than the projects I have done before, mainly because it allows me to mix HTML, CSS, and JavaScript, as well as understand how to use Math
+              In fact, this project is less difficult than the projects I have
+              done before, mainly because it allows me to mix HTML, CSS, and
+              JavaScript, as well as understand how to use Math
             </p>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
             <li>
-            When taking a method name, you need to use a name that is easy to understand the method of the function
+              When taking a method name, you need to use a name that is easy to
+              understand the method of the function
             </li>
           </div>
+          <Link to="/projectTwo">
+            <i className="fa-solid fa-angles-left"></i>
+          </Link>
+          <Link to="/projectFour">
+            <i className="fa-solid fa-angles-right"></i>
+          </Link>
         </div>
       </div>
     </div>

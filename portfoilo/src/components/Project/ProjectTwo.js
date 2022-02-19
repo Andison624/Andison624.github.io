@@ -1,12 +1,13 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import findYourHatGif from "../../images/find-your-hat-demo.gif";
 import "./Project.css";
 
 export default function ProjectTwo() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="projectTwo">
       <div className="project-inner">
@@ -80,6 +81,26 @@ export default function ProjectTwo() {
         </div>
         <div className="project-footer">
           <div className="project-footer-inner">
+            <h1>PROCESS</h1>
+            <p>
+              The project was as I expected to imagine, and it was very
+              difficult for me as a beginner in JavaScript. In the early days, I
+              used only one class to write the entire mini-game. Secondly, the
+              map of the mini-game is not randomly generated, and the hats,
+              holes, and player positions are fixed.
+            </p>
+            <h1>SOLUTION</h1>
+            <p>
+              First of all, in order to better understand the operation of the
+              Class and facilitate future learning of React .js, I split the
+              entire mini-game into two classes. To better understand how
+              JavaScript works, I generated maps in the form of a for loop,
+              hats, holes, and player positions randomly generated in
+              Math.random. And to add more fun, I've added a hard mode for
+              players to choose from, in which every step left or right players
+              randomly generate a hole in the map, of course, that hole doesn't
+              spawn directly at the player's location.
+            </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
               This project got me to practice a lot of JavaScript basics such as
@@ -91,8 +112,16 @@ export default function ProjectTwo() {
               <i>Some key takeaways from this project are:</i>
             </h5>
             <li>Intensifier If than else, class, and loop.</li>
-            <li>Learn more about what a class is and make it easy to learn react</li>
+            <li>
+              Learn more about what a class is and make it easy to learn react
+            </li>
           </div>
+          <Link to="/projectOne">
+            <i className="fa-solid fa-angles-left"></i>
+          </Link>
+          <Link to="/projectThree">
+            <i className="fa-solid fa-angles-right"></i>
+          </Link>
         </div>
       </div>
     </div>

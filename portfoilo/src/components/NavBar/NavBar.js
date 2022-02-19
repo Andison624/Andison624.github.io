@@ -18,7 +18,7 @@ export default function NavBar() {
             Work
           </Link> */}
           <div className="dropdown">
-            <span className="dropbtn title">SideProject&nbsp;<i class="fa-solid fa-caret-down"></i></span>
+            <span className="dropbtn title">SideProject&nbsp;<i className="fa-solid fa-caret-down"></i></span>
             <div className="dropdown-content">
               <Link to="/projectOne">Case 1</Link>
               <Link to="/projectTwo">Case 2</Link>

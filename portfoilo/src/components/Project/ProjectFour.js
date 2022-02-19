@@ -1,8 +1,11 @@
 import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import Jammming from "../../images/Jammming.png";
 import jammmingSpotify from "../../images/jammmingSpotify.png";
+import commentOne from "../../images/commentOne.png";
+import commentTwo from "../../images/commentTwo.png";
 import "./Project.css";
 
 export default function ProjectFour() {
@@ -92,22 +95,42 @@ export default function ProjectFour() {
         </div>
         <div className="project-footer">
           <div className="project-footer-inner">
+            <h1>PROCESS</h1>
+            <p>
+            The main goal of this project was to understand how apis worked, but I needed to complete the entire web app framework before writing the API. I used the HTML and CSS provided by the project and then used react to create different classes. Since I had completed some SIDE PROJECTs for REACT before starting this project, it wasn't difficult to create the react part.
+            </p>
+            <h1>SOLUTION</h1>
+            <p>
+            I understand the versatility and role of APIs, so I want to learn how to use APIs, like the most commonly used Google Map API. The difficulty of the API is more difficult than I expected, Spotify provides teaching, I follow the steps to write to make the API work, but I don't understand how the API works. Without teaching, I wouldn't be able to introduce APIs from scratch. To this end, I have added a lot of comments to the FUNCTION, leaving it for reference when you need to use the API later.
+            </p>
+            <img src={commentOne}></img>
+            <img src={commentTwo}></img>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
               This web app can run successfully, but I still have a
               half-understanding of the operation of the API and need to learn
               more. In addition, to use this web app, you need to fill in Users
-              and Access in the background of <a href="https://developer.spotify.com/my-applications/#!/applications" target="_blank"><i>Spotify</i></a>{' '}to use it, otherwise, a
-              403 error will be displayed.
+              and Access in the background of{" "}
+              <a
+                href="https://developer.spotify.com/my-applications/#!/applications"
+                target="_blank"
+              >
+                <i>Spotify</i>
+              </a>{" "}
+              to use it, otherwise, a 403 error will be displayed.
             </p>
             <img src={jammmingSpotify}></img>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
-            <li>
-            How the API works
-            </li>
+            <li>How the API works</li>
           </div>
+          <Link to="/projectThree">
+            <i className="fa-solid fa-angles-left"></i>
+          </Link>
+          <Link to="/projectFive">
+            <i className="fa-solid fa-angles-right"></i>
+          </Link>
         </div>
       </div>
     </div>

@@ -10,7 +10,8 @@
 .project-inner h3,
 .project-inner h4,
 .project-inner h5,
-.project-inner i {
+.takeaways,
+.project-footer-inner h1 {
   font-family: Barlow, sans-serif;
   color: #69491a;
 }
@@ -56,6 +57,7 @@
   transition: 0.5s;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
+  margin: 20px;
 }
 
 .project-title-btn:hover {
@@ -131,8 +133,37 @@
   margin-top: 10px;
 }
 
+.project-footer-inner h3 {
+  margin-top: 50px;
+}
+
 .project-footer-inner i {
   font-weight: bold;
+}
+
+.project-footer-inner h1, .project-footer-inner h2{
+  text-align: center;
+}
+
+.project-footer-inner h5 {
+  margin-top: 30px;
+}
+
+.fa-angles-right,
+.fa-angles-left {
+  font-size: 80px;
+  padding: 200px 100px;
+  float: right;
+  transition: 0.5s;
+}
+
+.fa-angles-left {
+  float: left;
+}
+
+.fa-angles-right:hover,
+.fa-angles-left:hover {
+  color: black;
 }
 
 @media screen and (max-width: 991px) {
