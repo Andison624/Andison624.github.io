@@ -104,8 +104,10 @@ export default function ProjectFive() {
               <h3>REQUIREMENTS</h3>
               <img src={wireframes}></img>
               <div className="project-body-inner-3">
-                <h3>Wireframes</h3>
+                <h3>WIREFRAMES</h3>
+                <h4>BEFORE</h4>
                 <img src={DemoOne}></img>
+                <h4>AFTER</h4>
                 <img src={DemoTwo}></img>
               </div>
             </div>

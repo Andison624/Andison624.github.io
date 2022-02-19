@@ -9,8 +9,10 @@
 
 .project-inner h3,
 .project-inner h4,
-.project-inner h5 {
+.project-inner h5,
+.project-inner i {
   font-family: Barlow, sans-serif;
+  color: #69491a;
 }
 
 .project-inner img {
@@ -21,11 +23,12 @@
   font-size: 6rem;
   font-weight: 500;
   margin: 1rem 0;
+  color: #69491a;
 }
 
 .project-title,
 .project-body {
-  background: #fff9dd;
+  background: #f2ab39;
 }
 
 .project-head,
@@ -57,7 +60,7 @@
 
 .project-title-btn:hover {
   padding: 13px;
-  color: black;
+  color: #69491a;
 }
 
 .project-head-inner {
@@ -76,6 +79,9 @@
 }
 
 .project-body-inner-3 h3 {
+  margin-top: 100px;
+}
+.project-body-inner-3 h4 {
   margin-top: 100px;
 }
 
@@ -111,9 +117,10 @@
 
 .userWant-1,
 .userWant-2 {
-  background: #f5f5f5;
   width: 40%;
   padding: 75px;
+  background: #fff9dd;
+  border-radius: 5px;
 }
 
 .project-body-inner-1 {
@@ -125,10 +132,8 @@
 }
 
 .project-footer-inner i {
-  color: black;
   font-weight: bold;
 }
-
 
 @media screen and (max-width: 991px) {
   .project-title-inner,
