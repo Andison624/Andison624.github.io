@@ -180,7 +180,7 @@ export default function ProjectFive() {
               of how a project can be created from scratch. After understanding
               the ten project requirements, we expressed our opinions to choose
               the part of our handle and added some additional features to make
-              the entire Web app more complete and beautiful.
+              the entire Web app more complete and beautiful. In fact, I have not participated in the two parts of data and test, and do not understand how it actually works. Therefore, in the future, I need to check related articles to increase my knowledge.
             </p>
 {/*             <a
               href="https://andison624.github.io/ToDoList/"
