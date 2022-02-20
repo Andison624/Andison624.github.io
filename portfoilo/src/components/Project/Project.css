@@ -3,7 +3,7 @@
 #projectThree,
 #projectFour,
 #projectFive {
-  max-width: 1050px;
+  min-width: 640px;
 }
 
 .project-title-inner,
@@ -173,15 +173,16 @@
   border-bottom: 4px solid black;
 }
 
-.fa-angles-right,
-.fa-angles-left {
-  font-size: 80px;
+.fa-angles-right {
   padding: 200px 100px;
   float: right;
+  font-size: 60px;
   transition: 0.5s;
 }
 
 .fa-angles-left {
+  padding: 200px 30px 200px 40px;
+  font-size: 60px;
   float: left;
 }
 
@@ -222,14 +223,15 @@
     margin-top: 24px;
     width: 100%;
   }
-  .fa-angles-right,
-  .fa-angles-left {
+  .fa-angles-right {
     font-size: 40px;
     padding: 200px 20px;
     float: right;
     transition: 0.5s;
   }
   .fa-angles-left {
+    padding: 200px 5px 200px 20px;
+    font-size: 40px;
     float: left;
   }
 }
