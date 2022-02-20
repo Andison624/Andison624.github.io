@@ -73,7 +73,6 @@
 }
 
 .project-head-inner {
-  /* display: grid; */
   display: flex;
   justify-content: space-around;
 }

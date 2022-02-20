@@ -8,6 +8,7 @@
   padding-left: 42px;
   padding-right: 42px;
   margin-bottom: 24px;
+  min-width: 640px;
 }
 
 .title {

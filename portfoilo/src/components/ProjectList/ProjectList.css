@@ -1,5 +1,6 @@
 .projectList {
   padding-top: 51px;
+  min-width: 640px;
 }
 
 .projectList h3 {
