@@ -107,18 +107,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .sideProject-text:hover {
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sideProject-min {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .sideProject {
     display: none;
@@ -149,5 +137,17 @@
     max-width: 540px;
     line-height: 1.75;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sideProject-min {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sideProject-text:hover {
+    padding-bottom: 40px;
   }
 }
