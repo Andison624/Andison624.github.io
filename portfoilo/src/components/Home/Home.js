@@ -48,7 +48,7 @@ export default function Home() {
       <div className="line-2-text">
         <h1 className="line-2 rubber-band">I Learn, Code & Play!</h1>
       </div>
-      <div>
+      <div className="introduction">
         <p>
           I'm a junior front-end developer in Hong Kong. I'm reinforcing my
           front-end web development knowledge and trying to learn UI/UX. I'm

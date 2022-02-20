@@ -112,3 +112,42 @@
     padding-bottom: 40px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .sideProject-min {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sideProject{
+    display: none;
+  }
+  .sideProject-min {
+    margin-bottom: 40px;
+  }
+  .projectList span {
+    font-size: 20px;
+  }
+  .sideProject-img {
+    width: 100%;
+  }
+  .sideProject-img img {
+    width: 662px;
+    height: 328px;
+  }
+  .sideProject-text {
+    width: 100%;
+  }
+  .sideProject-text h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 900;
+  }
+  .sideProject-text p {
+    margin-top: 10px;
+    max-width: 540px;
+    line-height: 1.75;
+    font-size: 20px;
+  }
+}

@@ -2,10 +2,15 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 import ColmarAcademy from "../../images/ColmarAcademy.png";
+import ColmarAcademyMin from "../../images/ColmarAcademy-min.png";
 import FindYourHat from "../../images/FindYourHat.png";
+import FindYourHatMin from "../../images/FindYourHat-min.png";
 import NumberGuesser from "../../images/NumberGuesser.png";
+import NumberGuesserMin from "../../images/NumberGuesser-min.png";
 import Jammming from "../../images/Jammming.png";
+import JammmingMin from "../../images/Jammming-min.png";
 import ToDoList from "../../images/ToDoList.png";
+import ToDoListMin from "../../images/ToDoList-min.png";
 
 import "./ProjectList.css";
 import { Link } from "react-router-dom";
@@ -18,9 +23,9 @@ export default function Project() {
       pjDetail:
         "My first side project, a web template need to use HTML5, CSS, and Responsive Web Design as project requirements. Outside of the project requirements, I joined the bootstrap framework to complete this side project.",
       src: ColmarAcademy,
+      src2: ColmarAcademyMin,
       alt: "Colmar Academy Side Project",
       link: "/projectOne",
-      s: "123"
     },
     {
       id: "findYourHat",
@@ -28,6 +33,7 @@ export default function Project() {
       pjDetail:
         "This is my first side project after learning JavaScript, only using four patterns and JS language to create this mini-game that can run in a terminal. To add challenges, in addition to the project requirements, I added Hardmode to make this mini-game more  interesting.",
       src: FindYourHat,
+      src2: FindYourHatMin,
       alt: "Find Your Hat Side Project",
       link: "/projectTwo",
     },
@@ -37,6 +43,7 @@ export default function Project() {
       pjDetail:
         "A little game that mixed the HTML5, CSS, and JavaScript languages. I learned, this game is the system randomly picks a number, then the player and the computer each pick a number, and the party closest to the system's random number wins.",
       src: NumberGuesser,
+      src2: NumberGuesserMin,
       alt: "Number Guesser Side Project",
       link: "/projectThree",
     },
@@ -46,6 +53,7 @@ export default function Project() {
       pjDetail:
         "In this side project, I build a React web application called. Jammming. I use React components, passing state, and requests with the Spotify API to build a website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.",
       src: Jammming,
+      src2: JammmingMin,
       alt: "Jammming Side Project",
       link: "/projectFour",
     },
@@ -55,6 +63,7 @@ export default function Project() {
       pjDetail:
         "It's a one-month side project by three people, that uses all the knowledge I've learned, starting with design, exchanging ideas with team members, and sharing suggestions, a web app that can really be used by others.",
       src: ToDoList,
+      src2: ToDoListMin,
       alt: "To Do List Side Project",
       link: "/projectFive",
     },
@@ -103,6 +112,24 @@ export default function Project() {
               <div className="sideProject-img">
                 <Link to={pj.link}>
                   <img src={pj.src} alt={pj.alt} />
+                </Link>
+              </div>
+              <div className="sideProject-text">
+                <h3>{pj.pjTitle}</h3>
+                <p>{pj.pjDetail}</p>
+                <Link to={pj.link} className="readMore-btn">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+        {pjListData.map((pj) => {
+          return (
+            <div id={pj.id} className="sideProject-min reveal">
+              <div className="sideProject-img">
+                <Link to={pj.link}>
+                  <img src={pj.src2} alt={pj.alt} />
                 </Link>
               </div>
               <div className="sideProject-text">

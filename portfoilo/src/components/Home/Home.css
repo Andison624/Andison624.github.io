@@ -186,13 +186,31 @@
   .home {
     padding: 24px;
   }
-  .home p{
+  .home p {
     font-size: 0.9em;
   }
-  .line1 {
+  .line-1 {
     font-size: 34px;
   }
-  .line-2 {
+  .line-2-text {
     font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .line-1, .myName{
+    padding-top: 20px;
+    font-size: 70px !important;
+    margin: 0;
+  }
+  .line-2-text {
+    display: none;
+  }
+  .introduction{
+    max-width: 550px;
+    font-size: 22px;
+    margin-top: 10px;
+    line-height: 1.75;
+    font-weight: 300;
   }
 }
