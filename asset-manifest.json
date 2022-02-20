@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c20cb44a.css",
+    "main.css": "/static/css/main.69680152.css",
     "main.js": "/static/js/main.40e33379.js",
     "static/media/colmar-academy-spec.png": "/static/media/colmar-academy-spec.0569bbdeef6b739d0db6.png",
     "static/media/ColmarAcademy.png": "/static/media/ColmarAcademy.d007b12978aa39dd1661.png",
@@ -23,11 +23,11 @@
     "static/media/ToDoList-min.png": "/static/media/ToDoList-min.58676bdd0a23095d165f.png",
     "static/media/email.png": "/static/media/email.edde96781f1253399d92.png",
     "index.html": "/index.html",
-    "main.c20cb44a.css.map": "/static/css/main.c20cb44a.css.map",
+    "main.69680152.css.map": "/static/css/main.69680152.css.map",
     "main.40e33379.js.map": "/static/js/main.40e33379.js.map"
   },
   "entrypoints": [
-    "static/css/main.c20cb44a.css",
+    "static/css/main.69680152.css",
     "static/js/main.40e33379.js"
   ]
 }
