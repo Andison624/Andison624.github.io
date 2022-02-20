@@ -127,6 +127,7 @@ export default function ProjectFive() {
               Next, work is assigned to work on the project.
             </p>
             <h1>SOLUTION</h1>
+            <h3 className="smallTitle">ADD TASK FUNCTION</h3>
             <p>
               After I co-organized the general framework with the team members,
               I began the functional part that I was responsible for. I pick
@@ -135,6 +136,7 @@ export default function ProjectFive() {
               place the Task data, facilitate the team member in charge of the
               data to change, and use .map to loop out each new task.
             </p>
+            <h3 className="smallTitle">UPDATE TASK FUNCTION</h3>
             <p>
               The second is the update task function, at the beginning, I was
               going to use the bootstrap top up the screen to present this
@@ -142,9 +144,10 @@ export default function ProjectFive() {
               the top up screen to display. Finally, I used the pen img in the
               task to directly update the information in the task.
             </p>
+            <h3 className="smallTitle">TICK TASK TO DONE & DELETE TASK FUNCTION</h3>
             <p>
               The next feature I'm going to say is to display the task as done
-              after tapping and to delete the don's task. Clicking on the task
+              after tapping and to delete the done task. Clicking on the task
               shows as a don, is the most important feature of the entire to do
               list, so I chose a tick button and changed the task's title to a
               light color as well as added a delete symbol to present this
@@ -153,6 +156,7 @@ export default function ProjectFive() {
               done className, and if it is displayed as true, it will be
               deleted.
             </p>
+            <h3 className="smallTitle">SEARCH TASK FUNCTION</h3>
             <p>
               After the team member responsible for writing the data completed
               the local data, I started to write the search function. I wrote it
@@ -164,6 +168,7 @@ export default function ProjectFive() {
               the task title is searched, and only tasks with the same text are
               displayed.
             </p>
+            <h3 className="smallTitle">ADD TASK FUNCTION</h3>
             <p>
               Finally, there are some interesting features that I decided to
               add, which are sidebar and dark mode. Sidebar is very commonly

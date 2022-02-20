@@ -66,26 +66,26 @@
   color: #000000;
   border-radius: 5px;
   box-shadow: 0 4px 15px 0 rgba(151, 155, 155, 0.5);
-  transition:  0.75s;
+  transition: 0.75s;
   -webkit-transition: 0.75s;
 }
 
 .readMore-btn:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #colmarAcademy {
   margin-top: 80px;
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
@@ -120,7 +120,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .sideProject{
+  .sideProject {
     display: none;
   }
   .sideProject-min {
@@ -130,11 +130,11 @@
     font-size: 20px;
   }
   .sideProject-img {
-    width: 100%;
+    width: 80%;
   }
   .sideProject-img img {
-    width: 662px;
-    height: 328px;
+    width: 120%;
+    height: auto;
   }
   .sideProject-text {
     width: 100%;
