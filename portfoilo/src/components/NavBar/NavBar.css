@@ -8,7 +8,7 @@
   padding-left: 42px;
   padding-right: 42px;
   margin-bottom: 24px;
-  min-width: 640px;
+  min-width: 100%;
 }
 
 .title {
@@ -40,7 +40,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white ;
+  background-color: white;
   min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0);
   z-index: 1;
@@ -63,11 +63,79 @@
   display: block;
 }
 
-@media screen and (max-width: 991px)  {
-  .title, .dropdown-content a {
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background: fixed;
+  color: #111;
+  border: none;
+}
+
+.sidepanel {
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  top: -100px;
+  left: 0px;
+  background: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  margin: 20px;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  font-size: 36px;
+}
+
+.hamList-top {
+  margin-top: 100px;
+}
+
+.hamList {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hamDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.case{
+  margin: 10px;
+}
+
+.case a{
+  color: #5375ff;
+}
+
+@media screen and (max-width: 991px) {
+  .title,
+  .dropdown-content a {
     font-size: 15px;
   }
   .dropdown-content {
     min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .desktop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile{
+    display: none;
   }
 }

@@ -3,7 +3,7 @@
   background: #f5f5f5;
   box-sizing: border-box;
   padding: 35px 50px;
-  min-width: 640px;
+  min-width: 1100px;
 }
 
 .wave {
@@ -199,6 +199,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .home{
+    min-width: 568px;
+  }
   .line-1, .myName{
     padding-top: 20px;
     font-size: 70px !important;
@@ -213,5 +216,14 @@
     margin-top: 10px;
     line-height: 1.75;
     font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .home{
+    min-width: 320px;
+  }
+  .line-1 , .myName{
+    font-size: 40px !important;
   }
 }

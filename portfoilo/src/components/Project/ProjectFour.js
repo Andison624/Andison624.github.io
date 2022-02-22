@@ -58,10 +58,14 @@ export default function ProjectFour() {
               <h5>
                 <i>SKILLS</i>
               </h5>
-              <span>HTML5</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>API</span>
+              <div className="skills">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="skills">
+                <span>API</span>
+              </div>
             </div>
           </div>
         </div>

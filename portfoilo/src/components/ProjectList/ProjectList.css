@@ -1,6 +1,6 @@
 .projectList {
   padding-top: 51px;
-  min-width: 640px;
+  min-width: 100%;
 }
 
 .projectList h3 {
@@ -50,7 +50,7 @@
 .sideProject-img img {
   width: 500px;
   height: 400px;
-  box-shadow: 0 4px 50px 0 rgba(97, 97, 94, 0.75);
+  box-shadow: 0 4px 50px 0 rgba(97, 97, 94, 0.3);
   background-size: cover;
   border-radius: 5px;
   cursor: pointer;
@@ -138,6 +138,12 @@
     max-width: 540px;
     line-height: 1.75;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sideProject-text h3 {
+    font-size: 32px;
   }
 }
 

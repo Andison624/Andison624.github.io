@@ -1,40 +1,68 @@
 .footer {
-    background: #f5f5f5;
-    min-width: 640px;
+  background: #f5f5f5;
+  min-width: 1100px;
 }
 
 .contact {
-    width: 50%;
+  width: 50%;
 }
 
-.contact h3{
-    font-size: 36px;
-    transition: 0.5s;
+.contact h3 {
+  font-size: 36px;
+  transition: 0.5s;
 }
 
 .contact h3:hover {
-    color: black;
+  color: black;
 }
 
 .footer-inner {
-    max-width: 500px;
-    min-width: 400px;
-    margin: 0 auto;
-    padding: 90px 0;
+  /* max-width: 500px;
+  min-width: 400px; */
+  margin: 0 auto;
+  padding: 90px 0;
 }
 
 .footer-img {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-.footer-img-inner  img{
-    width: 30px;
-    height: 30px;
-    margin-right: 30px;
-    cursor: pointer;  
-    transition: all 0.6s;  
+.footer-img-inner img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: all 0.6s;
 }
 
-.footer-img-inner img:hover{
-    transform: scale(1.4);
+.footer-img-inner img:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    min-width: 640px;
+  }
+  .contact {
+      margin-left: 125px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    min-width: 568px;
+  }
+  .contact {
+    margin-left: 30px;
+  }
+  .contact {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 469px) {
+  .footer {
+    min-width: 320px;
+  }
+  .contact h3 {
+    font-size: 28px;
+  }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import colmarAcademySpec from "../../images/colmar-academy-spec.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Project.css";
@@ -50,10 +50,14 @@ export default function ProjectOne() {
               <h5>
                 <i>SKILLS</i>
               </h5>
-              <span>HTML5</span>
-              <span>CSS</span>
-              <span>ResponsiveWeb</span>
-              <span>Bootstrap</span>
+              <div className="skills">
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>ResponsiveWeb</span>
+              </div>
+              <div className="skills">
+                <span>Bootstrap</span>
+              </div>
             </div>
           </div>
         </div>
@@ -86,9 +90,24 @@ export default function ProjectOne() {
         <div className="project-footer">
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
-            <p>At the beginning of the project, when I learned that the project only needed to be done using HTML and CSS, I thought it was very simple and only took a little time to complete.It's just that when I was coding, I found that the size provided by the project was different from the actual size of the pictures provided by the project, which made me a bit confused.In addition, in the use of CSS, I found that I was not as skilled as I thought.</p>
+            <p>
+              At the beginning of the project, when I learned that the project
+              only needed to be done using HTML and CSS, I thought it was very
+              simple and only took a little time to complete.It's just that when
+              I was coding, I found that the size provided by the project was
+              different from the actual size of the pictures provided by the
+              project, which made me a bit confused.In addition, in the use of
+              CSS, I found that I was not as skilled as I thought.
+            </p>
             <h1>SOLUTION</h1>
-            <p>While searching the information, I found the web framework software, that pre-picks some of the kits that will be used in writing web applications and gives the project the initial architecture. In the end, I chose bootstrap to complete the project, and after understanding the concepts of col and row, the project was easily completed.</p>
+            <p>
+              While searching the information, I found the web framework
+              software, that pre-picks some of the kits that will be used in
+              writing web applications and gives the project the initial
+              architecture. In the end, I chose bootstrap to complete the
+              project, and after understanding the concepts of col and row, the
+              project was easily completed.
+            </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
               With the popularity of 3G, more and more people are using mobile
