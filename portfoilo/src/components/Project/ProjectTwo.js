@@ -51,7 +51,9 @@ export default function ProjectTwo() {
               <h5>
                 <i>SKILLS</i>
               </h5>
-              <span>JavaScript</span>
+              <div className="skill-list">
+                <div className="skill">JavaScript</div>
+              </div>
             </div>
           </div>
         </div>

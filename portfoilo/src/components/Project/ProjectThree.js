@@ -53,9 +53,11 @@ export default function ProjectThree() {
               <h5>
                 <i>SKILLS</i>
               </h5>
-              <span>HTML5</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+              <div className="skill-list">
+                <div className="skill">HTML5</div>
+                <div className="skill">CSS</div>
+                <div className="skill">JavaScript</div>
+              </div>
             </div>
           </div>
         </div>

@@ -207,6 +207,9 @@
     font-size: 70px !important;
     margin: 0;
   }
+  .line-1 h1{
+    font-size: 50px;
+  }
   .line-2-text {
     display: none;
   }

@@ -57,28 +57,18 @@ export default function ProjectFive() {
               <h5>
                 <i>SKILLS</i>
               </h5>
-              <div>
-                <div className="skills">
-                  <span>HTML5</span>
-                  <span>CSS</span>
-                  <span>Figma</span>
-                </div>
-                <div className="skills">
-                  <span>Bootstrap</span>
-                  <span>ResponsiveWeb</span>
-                </div>
-                <div className="skills">
-                  <span>JavaScript</span>
-                  <span>React.js</span>
-                </div>
-                <div className="skills">
-                  <span>jQuery</span>
-                  <span>API</span>
-                  <span>Jest</span>
-                </div>
-                <div className="skills">
-                  <span>React-bootstrap</span>
-                </div>
+              <div className="skill-list">
+                <div className="skill">HTML5</div>
+                <div className="skill">CSS</div>
+                <div className="skill">Figma</div>
+                <div className="skill">JavaScript</div>
+                <div className="skill">React.js</div>
+                <div className="skill">Bootstrap</div>
+                <div className="skill">React-bootstrap</div>
+                <div className="skill">jQuery</div>
+                <div className="skill">API</div>
+                <div className="skill">Jest</div>
+                <div className="skill">ResponsiveWeb</div>
               </div>
             </div>
           </div>

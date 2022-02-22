@@ -50,13 +50,11 @@ export default function ProjectOne() {
               <h5>
                 <i>SKILLS</i>
               </h5>
-              <div className="skills">
-                <span>HTML5</span>
-                <span>CSS</span>
-                <span>Bootstrap</span>
-              </div>
-              <div className="skills">
-                <span>ResponsiveWeb</span>
+              <div className="skill-list">
+                <div className="skill">HTML5</div>
+                <div className="skill">CSS</div>
+                <div className="skill">Bootstrap</div>
+                <div className="skill">ResponsiveWeb</div>
               </div>
             </div>
           </div>

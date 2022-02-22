@@ -93,11 +93,17 @@
   margin-top: 100px;
 }
 
-.project-head-inner span {
+.skill-list {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.project-head-inner .skill {
   width: fit-content;
   padding: 5px 15px;
   border-radius: 28px;
   margin-right: 10px;
+  margin-top: 10px;
   background: #222;
   color: #ccc;
   font-weight: 300;
@@ -106,12 +112,8 @@
   cursor: default;
 }
 
-.project-head-inner span:hover {
+.project-head-inner .skill:hover {
   color: #ffffff;
-}
-
-.skills {
-  margin: 20px;
 }
 
 .project-body-inner h3 {
@@ -189,6 +191,8 @@
 .fa-angles-left:hover {
   color: black;
 }
+
+
 
 @media screen and (max-width: 991px) {
   #projectOne,
