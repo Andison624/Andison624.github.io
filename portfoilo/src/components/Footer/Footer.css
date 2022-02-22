@@ -5,6 +5,7 @@
 
 .contact {
   width: 50%;
+  margin: 0 auto;
 }
 
 .contact h3 {
@@ -17,8 +18,6 @@
 }
 
 .footer-inner {
-  /* max-width: 500px;
-  min-width: 400px; */
   margin: 0 auto;
   padding: 90px 0;
 }
@@ -44,7 +43,7 @@
     min-width: 640px;
   }
   .contact {
-      margin-left: 125px;
+    margin-left: 125px;
   }
 }
 @media screen and (max-width: 767px) {
