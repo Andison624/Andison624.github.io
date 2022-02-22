@@ -2,6 +2,9 @@
 
 This web side is my portfoilo.I completed it as a personal side project, the total time: (Feb 13 - Feb 21: 8 days).
 
+Update:
+fix the responsive bug(Feb 22)
+
 # WIREFRAMES
 
 ![image](https://github.com/Andison624/Andison624.github.io/blob/master/portfoilo/src/images/frameMap.png)
