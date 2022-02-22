@@ -61,21 +61,23 @@ export default function ProjectFive() {
                 <div className="skills">
                   <span>HTML5</span>
                   <span>CSS</span>
-                  <span>ResponsiveWeb</span>
+                  <span>Figma</span>
                 </div>
                 <div className="skills">
                   <span>Bootstrap</span>
-                  <span>React-bootstrap</span>
+                  <span>ResponsiveWeb</span>
                 </div>
                 <div className="skills">
                   <span>JavaScript</span>
                   <span>React.js</span>
-                  <span>jQuery</span>
                 </div>
                 <div className="skills">
-                  <span>Figma</span>
-                  <span>Jest</span>
+                  <span>jQuery</span>
                   <span>API</span>
+                  <span>Jest</span>
+                </div>
+                <div className="skills">
+                  <span>React-bootstrap</span>
                 </div>
               </div>
             </div>
@@ -144,7 +146,9 @@ export default function ProjectFive() {
               the top up screen to display. Finally, I used the pen img in the
               task to directly update the information in the task.
             </p>
-            <h3 className="smallTitle">TICK TASK TO DONE & DELETE TASK FUNCTION</h3>
+            <h3 className="smallTitle">
+              TICK TASK TO DONE & DELETE TASK FUNCTION
+            </h3>
             <p>
               The next feature I'm going to say is to display the task as done
               after tapping and to delete the done task. Clicking on the task
@@ -185,7 +189,10 @@ export default function ProjectFive() {
               of how a project can be created from scratch. After understanding
               the ten project requirements, we expressed our opinions to choose
               the part of our handle and added some additional features to make
-              the entire Web app more complete and beautiful. In fact, I have not participated in the two parts of data and test, and do not understand how it actually works. Therefore, in the future, I need to check related articles to increase my knowledge.
+              the entire Web app more complete and beautiful. In fact, I have
+              not participated in the two parts of data and test, and do not
+              understand how it actually works. Therefore, in the future, I need
+              to check related articles to increase my knowledge.
             </p>
             <a
               href="https://github.com/Andison624/ToDoList"

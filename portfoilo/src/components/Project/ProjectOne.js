@@ -53,10 +53,10 @@ export default function ProjectOne() {
               <div className="skills">
                 <span>HTML5</span>
                 <span>CSS</span>
-                <span>ResponsiveWeb</span>
+                <span>Bootstrap</span>
               </div>
               <div className="skills">
-                <span>Bootstrap</span>
+                <span>ResponsiveWeb</span>
               </div>
             </div>
           </div>
