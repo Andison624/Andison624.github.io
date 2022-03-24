@@ -2,9 +2,12 @@ import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import wireframes from "../../images/wireframes.png";
-import DemoOne from "../../images/1stDemo.png";
-import DemoTwo from "../../images/2ndDemo.png";
+import DemoOne from "../../images/frameMap.png";
+import DemoTwo from "../../images/color.jpeg";
+import Ex1 from "../../images/ex1.gif";
+import Ex2 from "../../images/ex2.png";
+import Ex3 from "../../images/ex3.png";
+import Ex4 from "../../images/ex4.png";
 import "./Project.css";
 
 export default function ProjectFive() {
@@ -16,17 +19,17 @@ export default function ProjectFive() {
       <div className="project-inner">
         <div className="project-title">
           <div className="project-title-inner">
-            <h1>TO DO LIST</h1>
+            <h1>Portfolio</h1>
             <div className="project-title-text">
-              <h4>Completion:2021-1 month</h4>
+              <h4>Completion:2022/Feb 13 - Feb 22</h4>
               <div>
                 <a
-                  href="https://andison624.github.io/ToDoList/"
+                  href="https://github.com/Andison624/Andison624.github.io"
                   target="_blank"
-                  rel="toDoList"
+                  rel="portfolio"
                   className="project-title-btn"
                 >
-                  VIEW DEMO
+                  VIEW CODE
                 </a>
               </div>
             </div>
@@ -37,22 +40,18 @@ export default function ProjectFive() {
             <div className="project-head-inner-1">
               <h3>CHALLENGE</h3>
               <p>
-                This project is working in a group of 3 people. There are ten
-                requirements in total: Design The App Wireframes/ Implement The
-                Wireframes using Bootstrap/ Create a Task Card layout and a Task
-                List component/ Display The Tasks/ Task Form Inputs Validation/
-                Update A Task/ Persisting Tasks to LocalStorage/ Deleting Tasks/
-                Test TaskManager.
+                The first work, which is independently completed from scratch,
+                needs to present the knowledge it has as much as possible, and
+                at the same time meet the requirements of aesthetics and
+                practicality
               </p>
             </div>
             <div className="project-head-inner-2">
               <h3>OUTCOME</h3>
               <p>
-                I handle Design The App Wireframes/ Implement The Wireframes
-                using Bootstrap/ Create a Task Card layout and a Task List
-                component/ Display The Tasks/ Update A Task/ Deleting Tasks. As
-                well as some additional challenges such as dark mode, search
-                function, and sidebar.
+                While I successfully presented the knowledge I had, I learned a
+                lot of new knowledge during the completion of the work and
+                applied it to the work
               </p>
               <h5>
                 <i>SKILLS</i>
@@ -63,11 +62,9 @@ export default function ProjectFive() {
                 <div className="skill">Figma</div>
                 <div className="skill">JavaScript</div>
                 <div className="skill">React.js</div>
-                <div className="skill">Bootstrap</div>
-                <div className="skill">React-bootstrap</div>
-                <div className="skill">jQuery</div>
-                <div className="skill">API</div>
-                <div className="skill">Jest</div>
+                <div className="skill">React-Hook</div>
+                <div className="skill">React-Router</div>
+                <div className="skill">React-Animation</div>
                 <div className="skill">ResponsiveWeb</div>
               </div>
             </div>
@@ -80,27 +77,22 @@ export default function ProjectFive() {
               <div className="userWant">
                 <div className="userWant-1">
                   <h5>01</h5>
-                  <span>
-                    They need to create a Task Planner web app from scratch.
-                  </span>
+                  <span>Viewers can easily find the data they want to see</span>
                 </div>
                 <div className="userWant-2">
                   <h5>02</h5>
                   <span>
-                    they need to demonstrate the technical and non-technical
-                    skills developed during the Junior Web Developer program.
+                    Without compromising the viewer's experience, present the
+                    knowledge I have as much as possible
                   </span>
                 </div>
               </div>
             </div>
             <div className="project-body-inner-2">
-              <h3>REQUIREMENTS</h3>
-              <img src={wireframes}></img>
+              <h3>WIREFRAMES</h3>
+              <img src={DemoOne}></img>
               <div className="project-body-inner-3">
-                <h3>WIREFRAMES</h3>
-                <h4>BEFORE</h4>
-                <img src={DemoOne}></img>
-                <h4>AFTER</h4>
+                <h3>COLORTONE</h3>
                 <img src={DemoTwo}></img>
               </div>
             </div>
@@ -110,105 +102,124 @@ export default function ProjectFive() {
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
             <p>
-              Before the coding starts, we'll discuss the necessary features of
-              the to-do list, as well as the extra features we want to add.
-              After drawing the wireframe of the to-do list, we built the
-              framework using HTML, CSS, and bootstrap. For added convenience,
-              we used React .js to make the project instead, and React.Hook
-              replaced React.Component and React-bootstrap instead of bootstrap.
-              Next, work is assigned to work on the project.
+              Before starting coding, I collected a lot of articles on{" "}
+              <a
+                href="https://www.uiux.studio/ux-deliverables.html"
+                target="_blank"
+              >
+                <i>UIUX</i>
+              </a>
+              ,
+              <a
+                href="https://careerfoundry.com/en/blog/ux-design/ux-portfolio-examples-inspiration/"
+                target="_blank"
+              >
+                <i>portfolio creation</i>
+              </a>
+              , and{" "}
+              <a
+                href="https://www.shutterstock.com/zh-Hant/blog/complete-guide-color-in-design"
+                target="_blank"
+              >
+                <i>color tone </i>
+              </a>
+              on the Internet, and based on this, I drew wireframes on Figma and
+              started creating. Next, I will explain the difficulties
+              encountered during this period
             </p>
             <h1>SOLUTION</h1>
-            <h3 className="smallTitle">ADD TASK FUNCTION</h3>
+            <h3 className="smallTitle">DYNAMIC CHARACTERS</h3>
             <p>
-              After I co-organized the general framework with the team members,
-              I began the functional part that I was responsible for. I pick
-              some of the more special parts that I am responsible for to
-              illustrate. The first is the add task function, I used useState to
-              place the Task data, facilitate the team member in charge of the
-              data to change, and use .map to loop out each new task.
+              In the original version, when the mouse hovered over any
+              "animated" text that had a className, it would have all the text
+              that owned the className enter the animation synchronously, and
+              when the mouse left the text, it would immediately stop the
+              animation without playing the entire animation until the end.
             </p>
-            <h3 className="smallTitle">UPDATE TASK FUNCTION</h3>
+            <a
+              href="https://www.geeksforgeeks.org/rubber-band-text-animation-using-html-and-css/"
+              target="_blank"
+            >
+              <img src={Ex1}></img>
+            </a>
             <p>
-              The second is the update task function, at the beginning, I was
-              going to use the bootstrap top up the screen to present this
-              function, just considering that my add task function is not using
-              the top up screen to display. Finally, I used the pen img in the
-              task to directly update the information in the task.
+              I first tried js adding an "animated" className when the mouse
+              hovered over text, but I couldn't solve the problem. Then I tried
+              to add setTimeout, hoping that the animation would still play
+              until the end after the mouse left the text, but there was no
+              effect. In the end, after searching a lot of information on the
+              Internet, I found that I only needed to apply the method I tried
+              earlier on useEffect and apply it to each text in the form of
+              forEach, which could be solved and achieve the current effect.
             </p>
-            <h3 className="smallTitle">
-              TICK TASK TO DONE & DELETE TASK FUNCTION
-            </h3>
+            <h3 className="smallTitle">CODE IS TOO REPETITIVE</h3>
             <p>
-              The next feature I'm going to say is to display the task as done
-              after tapping and to delete the done task. Clicking on the task
-              shows as a don, is the most important feature of the entire to do
-              list, so I chose a tick button and changed the task's title to a
-              light color as well as added a delete symbol to present this
-              function. I used className to add done to accomplish this. As for
-              the deletion function, it is to determine whether the task has a
-              done className, and if it is displayed as true, it will be
-              deleted.
+              When homePage scrolls down, you can see each project appear one by
+              one, and for convenience, when I finish writing the first
+              template, I copy the same code to complete it. When I finished
+              this work, I only discovered this problem while looking for
+              something that could be improved. To do this, I changed all the
+              codes and completed them in the form of .map.
             </p>
-            <h3 className="smallTitle">SEARCH TASK FUNCTION</h3>
+            <img src={Ex2}></img>
+            <h3 className="smallTitle">An error occurred with the jump page</h3>
             <p>
-              After the team member responsible for writing the data completed
-              the local data, I started to write the search function. I wrote it
-              using the search function I learned from the last jammming
-              project. Since it is not an API, I need to write the actual search
-              function myself, I use it to determine whether the length of the
-              search input is 0 to perform this function. When there is nothing
-              in the input bar, all tasks are displayed. When there is input,
-              the task title is searched, and only tasks with the same text are
-              displayed.
+              When the user scroll goes down and clicks on any option to jump to
+              another page, it will appear where the previous page scroll went.
+              Although I couldn't find the place where the problem occurred, I
+              also found a solution. I used useEffect, and whenever I go to
+              another page, I refresh the window's scroll to the top.
             </p>
-            <h3 className="smallTitle">ADD TASK FUNCTION</h3>
+            <img src={Ex3}></img>
+            <h3 className="smallTitle">RWD MISTAKES</h3>
             <p>
-              Finally, there are some interesting features that I decided to
-              add, which are sidebar and dark mode. Sidebar is very commonly
-              used, so I took the opportunity to add them. Dark mode has also
-              been a very popular feature lately, so I tried it out as well.
-              Interestingly, after using jQuery to complete the dark mode, I
-              found a more convenient way to write it, which is CSS custom
-              properties. I should try this feature next time I need to use
-              similar CSS.
+              When I designed RWB, I used my previous experience with a{" "}
+              <a
+                href="https://github.com/Andison624/Capstone-ColmarAssets"
+                target="_blank"
+              >
+                <i>side project</i>
+              </a>
+              , media screen using min-width: 801px and max-width: 800px.
+              However, after completing it, I found that there were many
+              problems. First, on different devices, it can't show the entire
+              content, or the size of the content is too large. Secondly, some
+              functions will also cause position errors due to size, such as the
+              next page icon at the bottom of each page.
+            </p>
+            <img src={Ex4}></img>
+            <p>
+              To solve these problems, I searched a lot of articles online and
+              learned that RWD needs to meet the size requirements of different
+              devices and resize the content according to these dimensions, such
+              as the designs commonly used for images, such as the designs that
+              are commonly used for images: auto and width: 100%.
             </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-              The project was conducted in small groups, which gave me an idea
-              of how a project can be created from scratch. After understanding
-              the ten project requirements, we expressed our opinions to choose
-              the part of our handle and added some additional features to make
-              the entire Web app more complete and beautiful. In fact, I have
-              not participated in the two parts of data and test, and do not
-              understand how it actually works. Therefore, in the future, I need
-              to check related articles to increase my knowledge.
+              I enjoyed this independent work, such as the project list of
+              scroll events, hover images become larger, etc., which made me
+              very interesting. In completing this work, I searched a lot of
+              different materials, which allowed me to gain more knowledge, such
+              as some common mistakes of RWD, the concept of SEO, etc.
             </p>
             <a
-              href="https://github.com/Andison624/ToDoList"
+              href="https://github.com/Andison624/Andison624.github.io"
               target="_blank"
-              rel="toDoList"
+              rel="portfolio"
               className="project-footer-btn-one"
             >
               VIEW CODE
             </a>
-            <a
-              href="https://andison624.github.io/ToDoList/"
-              target="_blank"
-              rel="toDoList"
-              className="project-footer-btn-two"
-            >
-              VIEW DEMO
-            </a>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
+            <li>RWD common size: max-width (991px/767px/479px)</li>
             <li>
-              I learned to react.Hook, which is more convenient than
-              React.Component
-            </li>
-            <li>
-              I learned to use Figma to paint sitemaps before creating a web app
+              SEO optimization: Title is the most important / only use an H1
+              tag/Meta tag of Description/img to add alt / reduce the size of
+              the image file, speed up website loading / register Google Search
+              Console
             </li>
           </div>
           <Link to="/projectFour">

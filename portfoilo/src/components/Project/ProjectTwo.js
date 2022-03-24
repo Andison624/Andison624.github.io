@@ -1,29 +1,29 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import findYourHatGif from "../../images/find-your-hat-demo.gif";
+import NumberGuesser from "../../images/numberGuesserSpec.png";
 import "./Project.css";
 
-export default function ProjectTwo() {
+export default function ProjectThree() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div id="projectTwo">
+    <div id="projectThree">
       <div className="project-inner">
         <div className="project-title">
           <div className="project-title-inner">
-            <h1>Find Your Hat</h1>
+            <h1>Number Guesser</h1>
             <div className="project-title-text">
               <h4>Completion:2021-3 week</h4>
               <div>
                 <a
-                  href="https://github.com/Andison624/Find-Your-Hat"
+                  href="https://andison624.github.io/Number-Guesser/"
                   target="_blank"
-                  rel="findYourHat"
+                  rel="numberGuesser"
                   className="project-title-btn"
                 >
-                  VIEW CODE
+                  VIEW DEMO
                 </a>
               </div>
             </div>
@@ -34,24 +34,28 @@ export default function ProjectTwo() {
             <div className="project-head-inner-1">
               <h3>CHALLENGE</h3>
               <p>
-                In this project, I need to build an interactive terminal game.
-                The scenario is that the player has lost their hat in a field
-                full of holes, and they must navigate back to it without falling
-                down one of the holes or stepping outside of the field.
+                In this project, I write JavaScript functions to power a small
+                guessing game. This time, my code will run in the browser
+                instead of just the terminal. Instead of just seeing text output
+                from my program, my JavaScript functions are incorporated into a
+                website that also uses HTML/CSS.
               </p>
             </div>
             <div className="project-head-inner-2">
               <h3>OUTCOME</h3>
               <p>
-                In this project, I built an interactive terminal game with
-                JavaScript classes. I build this mini-game by looking at a
-                dynamic gif image and to add to the fun, I added other
-                difficulty options to the basic requirements.
+                In addition to the project requirements, I have added some
+                interactive features to make this project more interesting and
+                more comfortable for users. It's as if a sign will appear when
+                winning and losing. Provides a next round button to reset the
+                game without having to rearrange the page.
               </p>
               <h5>
                 <i>SKILLS</i>
               </h5>
               <div className="skill-list">
+                <div className="skill">HTML5</div>
+                <div className="skill">CSS</div>
                 <div className="skill">JavaScript</div>
               </div>
             </div>
@@ -65,19 +69,22 @@ export default function ProjectTwo() {
                 <div className="userWant-1">
                   <h5>01</h5>
                   <span>
-                    When users fall down one of the holes or step outside the
-                    map, show they are defeated.
+                    They need NPC to provide a random set of numbers as targets.
                   </span>
                 </div>
                 <div className="userWant-2">
                   <h5>02</h5>
-                  <span>When users find the hat, show they are won.</span>
+                  <span>
+                    They need after the computer player and the user provides a
+                    number, which side's number is closer to the NPC's random
+                    number to determine which side wins.
+                  </span>
                 </div>
               </div>
             </div>
             <div className="project-body-inner-2">
               <h3>REQUIREMENTS</h3>
-              <img src={findYourHatGif}></img>
+              <img src={NumberGuesser}></img>
             </div>
           </div>
         </div>
@@ -85,45 +92,53 @@ export default function ProjectTwo() {
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
             <p>
-              The project was as I expected to imagine, and it was very
-              difficult for me as a beginner in JavaScript. In the early days, I
-              used only one class to write the entire mini-game. Secondly, the
-              map of the mini-game is not randomly generated, and the hats,
-              holes, and player positions are fixed.
+              The difference between this project and the FindYourHat project is
+              that it operates on the browser, not the terminal. While it
+              requires additional HTML and CSS to create, it's not as difficult
+              as FindYourHat. Therefore, in order to add some fun, I added some
+              features to the design of the game to make it more convenient for
+              users.
             </p>
             <h1>SOLUTION</h1>
             <p>
-              First of all, in order to better understand the operation of the
-              Class and facilitate future learning of React .js, I split the
-              entire mini-game into two classes. To better understand how
-              JavaScript works, I generated maps in the form of a for loop,
-              hats, holes, and player positions randomly generated in
-              Math.random. And to add more fun, I've added a hard mode for
-              players to choose from, in which every step left or right players
-              randomly generate a hole in the map, of course, that hole doesn't
-              spawn directly at the player's location.
+              First, I added a button so that when the guessing numbers game is
+              over, you can refresh the game with an on-click button without
+              refreshing the entire web page. Secondly, I added the concept of
+              rounds, where one side can get points after winning, renaming the
+              refreshed button to the next round, and clicking on it to inherit
+              the score to the next round. Finally, since the number of random
+              is only between 0 and 9 when the player picks numbers below 0 and
+              above 9, I set a pop-up prompt telling the player that they must
+              pick a number between 0 and 9.
             </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-              This project got me to practice a lot of JavaScript basics such as
-              If than else, class, and loop. Since React is the world of
-              classes, it is easier for me to learn to react by relying on what
-              I learned in this project.
+              In fact, this project is less difficult than the projects I have
+              done before, mainly because it allows me to mix HTML, CSS, and
+              JavaScript, as well as understand how to use Math
             </p>
             <a
-              href="https://github.com/Andison624/Find-Your-Hat"
+              href="https://github.com/Andison624/Number-Guesser"
               target="_blank"
-              rel="Find-Your-Hat"
+              rel="NumberGuesser"
               className="project-footer-btn-one"
             >
               VIEW CODE
             </a>
+            <a
+              href="https://andison624.github.io/Number-Guesser/"
+              target="_blank"
+              rel="NumberGuesser"
+              className="project-footer-btn-two"
+            >
+              VIEW DEMO
+            </a>
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
-            <li>Intensifier If than else, class, and loop.</li>
             <li>
-              Learn more about what a class is and make it easy to learn react
+              When taking a method name, you need to use a name that is easy to
+              understand the method of the function
             </li>
           </div>
           <Link to="/projectOne">

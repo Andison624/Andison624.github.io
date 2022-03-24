@@ -1,31 +1,29 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import colmarAcademySpec from "../../images/colmar-academy-spec.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import findYourHatGif from "../../images/find-your-hat-demo.gif";
 import "./Project.css";
 
-export default function ProjectOne() {
+export default function ProjectTwo() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
-    <div id="projectOne">
+    <div id="projectTwo">
       <div className="project-inner">
         <div className="project-title">
           <div className="project-title-inner">
-            <h1>COLMAR ACADEMY</h1>
+            <h1>Find Your Hat</h1>
             <div className="project-title-text">
-              <h4>Completion:2021-1 week</h4>
+              <h4>Completion:2021-3 week</h4>
               <div>
                 <a
-                  href="https://andison624.github.io/Capstone-ColmarAssets/"
+                  href="https://github.com/Andison624/Find-Your-Hat"
                   target="_blank"
-                  rel="colmarAcademy"
+                  rel="findYourHat"
                   className="project-title-btn"
                 >
-                  VIEW DEMO
+                  VIEW CODE
                 </a>
               </div>
             </div>
@@ -36,25 +34,25 @@ export default function ProjectOne() {
             <div className="project-head-inner-1">
               <h3>CHALLENGE</h3>
               <p>
-                This project provides both desktop and responsive versions of
-                the image, which need to be done in one week according to the
-                size and layout requirements provided.
+                In this project, I need to build an interactive terminal game.
+                The scenario is that the player has lost their hat in a field
+                full of holes, and they must navigate back to it without falling
+                down one of the holes or stepping outside of the field.
               </p>
             </div>
             <div className="project-head-inner-2">
               <h3>OUTCOME</h3>
               <p>
-                To complete this project within the target timeframe, I used
-                bootstrap framework to complete this challenge.
+                In this project, I built an interactive terminal game with
+                JavaScript classes. I build this mini-game by looking at a
+                dynamic gif image and to add to the fun, I added other
+                difficulty options to the basic requirements.
               </p>
               <h5>
                 <i>SKILLS</i>
               </h5>
               <div className="skill-list">
-                <div className="skill">HTML5</div>
-                <div className="skill">CSS</div>
-                <div className="skill">Bootstrap</div>
-                <div className="skill">ResponsiveWeb</div>
+                <div className="skill">JavaScript</div>
               </div>
             </div>
           </div>
@@ -67,21 +65,19 @@ export default function ProjectOne() {
                 <div className="userWant-1">
                   <h5>01</h5>
                   <span>
-                    They need the project to match the size and layout required
-                    within the images they provide.
+                    When users fall down one of the holes or step outside the
+                    map, show they are defeated.
                   </span>
                 </div>
                 <div className="userWant-2">
                   <h5>02</h5>
-                  <span>
-                    They need both desktop and the responsive versions.
-                  </span>
+                  <span>When users find the hat, show they are won.</span>
                 </div>
               </div>
             </div>
             <div className="project-body-inner-2">
               <h3>REQUIREMENTS</h3>
-              <img src={colmarAcademySpec}></img>
+              <img src={findYourHatGif}></img>
             </div>
           </div>
         </div>
@@ -89,57 +85,46 @@ export default function ProjectOne() {
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
             <p>
-              At the beginning of the project, when I learned that the project
-              only needed to be done using HTML and CSS, I thought it was very
-              simple and only took a little time to complete.It's just that when
-              I was coding, I found that the size provided by the project was
-              different from the actual size of the pictures provided by the
-              project, which made me a bit confused.In addition, in the use of
-              CSS, I found that I was not as skilled as I thought.
+              The project was as I expected to imagine, and it was very
+              difficult for me as a beginner in JavaScript. In the early days, I
+              used only one class to write the entire mini-game. Secondly, the
+              map of the mini-game is not randomly generated, and the hats,
+              holes, and player positions are fixed.
             </p>
             <h1>SOLUTION</h1>
             <p>
-              While searching the information, I found the web framework
-              software, that pre-picks some of the kits that will be used in
-              writing web applications and gives the project the initial
-              architecture. In the end, I chose bootstrap to complete the
-              project, and after understanding the concepts of col and row, the
-              project was easily completed.
+              First of all, in order to better understand the operation of the
+              Class and facilitate future learning of React .js, I split the
+              entire mini-game into two classes. To better understand how
+              JavaScript works, I generated maps in the form of a for loop,
+              hats, holes, and player positions randomly generated in
+              Math.random. And to add more fun, I've added a hard mode for
+              players to choose from, in which every step left or right players
+              randomly generate a hole in the map, of course, that hole doesn't
+              spawn directly at the player's location.
             </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-              With the popularity of 3G, more and more people are using mobile
-              phones to access the Internet. Mobile devices are overtaking
-              desktop devices as the most common terminals to access the
-              Internet.This project allowed me to be exposed to this concept,
-              which I believe can be applied to future projects.
+              This project got me to practice a lot of JavaScript basics such as
+              If than else, class, and loop. Since React is the world of
+              classes, it is easier for me to learn to react by relying on what
+              I learned in this project.
             </p>
             <a
-              href="https://github.com/Andison624/Capstone-ColmarAssets"
+              href="https://github.com/Andison624/Find-Your-Hat"
               target="_blank"
-              rel="ColmarAssets"
+              rel="Find-Your-Hat"
               className="project-footer-btn-one"
             >
               VIEW CODE
             </a>
-            <a
-              href="https://andison624.github.io/Capstone-ColmarAssets/"
-              target="_blank"
-              rel="ColmarAssets"
-              className="project-footer-btn-two"
-            >
-              VIEW DEMO
-            </a>
             <h5>
-              <i className="takeaways">
-                Some key takeaways from this project are:
-              </i>
+              <i>Some key takeaways from this project are:</i>
             </h5>
+            <li>Intensifier If than else, class, and loop.</li>
             <li>
-              As getting into bootstrap, I learned about the convenience of
-              framework
+              Learn more about what a class is and make it easy to learn react
             </li>
-            <li>Search the responsive profile, know-how does its importanc</li>
           </div>
           <Link to="/projectTwo">
             <i className="fa-solid fa-angles-right"></i>

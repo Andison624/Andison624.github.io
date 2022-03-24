@@ -1,26 +1,30 @@
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import NumberGuesser from "../../images/numberGuesserSpec.png";
+
+import Jammming from "../../images/Jammming.png";
+import jammmingSpotify from "../../images/jammmingSpotify.png";
+import commentOne from "../../images/commentOne.png";
+import commentTwo from "../../images/commentTwo.png";
 import "./Project.css";
 
-export default function ProjectThree() {
+export default function ProjectFour() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div id="projectThree">
+    <div id="projectFour">
       <div className="project-inner">
         <div className="project-title">
           <div className="project-title-inner">
-            <h1>Number Guesser</h1>
+            <h1>JAMMMING</h1>
             <div className="project-title-text">
-              <h4>Completion:2021-3 week</h4>
+              <h4>Completion:2022-3 week</h4>
               <div>
                 <a
-                  href="https://andison624.github.io/Number-Guesser/"
+                  href="https://andison624.github.io/Jammming/"
                   target="_blank"
-                  rel="numberGuesser"
+                  rel="jammming"
                   className="project-title-btn"
                 >
                   VIEW DEMO
@@ -34,21 +38,22 @@ export default function ProjectThree() {
             <div className="project-head-inner-1">
               <h3>CHALLENGE</h3>
               <p>
-                In this project, I write JavaScript functions to power a small
-                guessing game. This time, my code will run in the browser
-                instead of just the terminal. Instead of just seeing text output
-                from my program, my JavaScript functions are incorporated into a
-                website that also uses HTML/CSS.
+                In this project, I will build a React web application called
+                Jammming. I will use my knowledge of React components, passing
+                state, and requests with the Spotify API to build a website that
+                allows users to search the Spotify library, create a custom
+                playlist, then save it to their Spotify account.
               </p>
             </div>
             <div className="project-head-inner-2">
               <h3>OUTCOME</h3>
               <p>
-                In addition to the project requirements, I have added some
-                interactive features to make this project more interesting and
-                more comfortable for users. It's as if a sign will appear when
-                winning and losing. Provides a next round button to reset the
-                game without having to rearrange the page.
+                I used the HTML and CSS available online and wrote out the
+                functionality that the entire web app needed with REACT.
+                However, I had no contact with the API and could not fully
+                understand it in a short period of time, so I referred to the
+                practice of online videos and wrote a lot of comments for future
+                research.
               </p>
               <h5>
                 <i>SKILLS</i>
@@ -56,6 +61,7 @@ export default function ProjectThree() {
               <div className="skill-list">
                 <div className="skill">HTML5</div>
                 <div className="skill">CSS</div>
+                <div className="skill">API</div>
                 <div className="skill">JavaScript</div>
               </div>
             </div>
@@ -69,22 +75,23 @@ export default function ProjectThree() {
                 <div className="userWant-1">
                   <h5>01</h5>
                   <span>
-                    They need NPC to provide a random set of numbers as targets.
+                    They need to use my knowledge of React components and
+                    passing state.
                   </span>
                 </div>
                 <div className="userWant-2">
                   <h5>02</h5>
                   <span>
-                    They need after the computer player and the user provides a
-                    number, which side's number is closer to the NPC's random
-                    number to determine which side wins.
+                    They need requests with the Spotify API to build a website
+                    that allows users to search the Spotify library, create a
+                    custom playlist, then save it to their Spotify account.
                   </span>
                 </div>
               </div>
             </div>
             <div className="project-body-inner-2">
               <h3>REQUIREMENTS</h3>
-              <img src={NumberGuesser}></img>
+              <img src={Jammming}></img>
             </div>
           </div>
         </div>
@@ -92,43 +99,55 @@ export default function ProjectThree() {
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
             <p>
-              The difference between this project and the FindYourHat project is
-              that it operates on the browser, not the terminal. While it
-              requires additional HTML and CSS to create, it's not as difficult
-              as FindYourHat. Therefore, in order to add some fun, I added some
-              features to the design of the game to make it more convenient for
-              users.
+              The main goal of this project was to understand how apis worked,
+              but I needed to complete the entire web app framework before
+              writing the API. I used the HTML and CSS provided by the project
+              and then used react to create different classes. Since I had
+              completed some SIDE PROJECTs for REACT before starting this
+              project, it wasn't difficult to create the react part.
             </p>
             <h1>SOLUTION</h1>
             <p>
-              First, I added a button so that when the guessing numbers game is
-              over, you can refresh the game with an on-click button without
-              refreshing the entire web page. Secondly, I added the concept of
-              rounds, where one side can get points after winning, renaming the
-              refreshed button to the next round, and clicking on it to inherit
-              the score to the next round. Finally, since the number of random
-              is only between 0 and 9 when the player picks numbers below 0 and
-              above 9, I set a pop-up prompt telling the player that they must
-              pick a number between 0 and 9.
+              I understand the versatility and role of APIs, so I want to learn
+              how to use APIs, like the most commonly used Google Map API. The
+              difficulty of the API is more difficult than I expected, Spotify
+              provides teaching, I follow the steps to write to make the API
+              work, but I don't understand how the API works. Without teaching,
+              I wouldn't be able to introduce APIs from scratch. To this end, I
+              have added a lot of comments to the FUNCTION, leaving it for
+              reference when you need to use the API later.
             </p>
+            <img src={commentOne}></img>
+            <img src={commentTwo}></img>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-              In fact, this project is less difficult than the projects I have
-              done before, mainly because it allows me to mix HTML, CSS, and
-              JavaScript, as well as understand how to use Math
+              This web app can run successfully, but I still have a
+              half-understanding of the operation of the API and need to learn
+              more. In addition, to use this web app, you need to fill in Users
+              and Access in the background of{" "}
+              <a
+                href="https://developer.spotify.com/my-applications/#!/applications"
+                target="_blank"
+              >
+                <i>Spotify</i>
+              </a>{" "}
+              to use it, otherwise, a 403 error will be displayed.
             </p>
+            <div>
+              <img src={jammmingSpotify}></img>
+            </div>
             <a
-              href="https://github.com/Andison624/Number-Guesser"
+              href="https://github.com/Andison624/Jammming"
               target="_blank"
-              rel="NumberGuesser"
+              rel="jammming"
               className="project-footer-btn-one"
             >
               VIEW CODE
             </a>
             <a
-              href="https://andison624.github.io/Number-Guesser/"
+              href="https://andison624.github.io/Jammming/"
               target="_blank"
-              rel="NumberGuesser"
+              rel="jammming"
               className="project-footer-btn-two"
             >
               VIEW DEMO
@@ -136,10 +155,7 @@ export default function ProjectThree() {
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
-            <li>
-              When taking a method name, you need to use a name that is easy to
-              understand the method of the function
-            </li>
+            <li>How the API works</li>
           </div>
           <Link to="/projectTwo">
             <i className="fa-solid fa-angles-left"></i>

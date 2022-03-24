@@ -2,29 +2,28 @@ import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import Jammming from "../../images/Jammming.png";
-import jammmingSpotify from "../../images/jammmingSpotify.png";
-import commentOne from "../../images/commentOne.png";
-import commentTwo from "../../images/commentTwo.png";
+import wireframes from "../../images/wireframes.png";
+import DemoOne from "../../images/1stDemo.png";
+import DemoTwo from "../../images/2ndDemo.png";
 import "./Project.css";
 
-export default function ProjectFour() {
+export default function ProjectFive() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div id="projectFour">
+    <div id="projectFive">
       <div className="project-inner">
         <div className="project-title">
           <div className="project-title-inner">
-            <h1>JAMMMING</h1>
+            <h1>TO DO LIST</h1>
             <div className="project-title-text">
-              <h4>Completion:2022-3 week</h4>
+              <h4>Completion:2021-1 month</h4>
               <div>
                 <a
-                  href="https://andison624.github.io/Jammming/"
+                  href="https://andison624.github.io/ToDoList/"
                   target="_blank"
-                  rel="jammming"
+                  rel="toDoList"
                   className="project-title-btn"
                 >
                   VIEW DEMO
@@ -38,22 +37,22 @@ export default function ProjectFour() {
             <div className="project-head-inner-1">
               <h3>CHALLENGE</h3>
               <p>
-                In this project, I will build a React web application called
-                Jammming. I will use my knowledge of React components, passing
-                state, and requests with the Spotify API to build a website that
-                allows users to search the Spotify library, create a custom
-                playlist, then save it to their Spotify account.
+                This project is working in a group of 3 people. There are ten
+                requirements in total: Design The App Wireframes/ Implement The
+                Wireframes using Bootstrap/ Create a Task Card layout and a Task
+                List component/ Display The Tasks/ Task Form Inputs Validation/
+                Update A Task/ Persisting Tasks to LocalStorage/ Deleting Tasks/
+                Test TaskManager.
               </p>
             </div>
             <div className="project-head-inner-2">
               <h3>OUTCOME</h3>
               <p>
-                I used the HTML and CSS available online and wrote out the
-                functionality that the entire web app needed with REACT.
-                However, I had no contact with the API and could not fully
-                understand it in a short period of time, so I referred to the
-                practice of online videos and wrote a lot of comments for future
-                research.
+                I handle Design The App Wireframes/ Implement The Wireframes
+                using Bootstrap/ Create a Task Card layout and a Task List
+                component/ Display The Tasks/ Update A Task/ Deleting Tasks. As
+                well as some additional challenges such as dark mode, search
+                function, and sidebar.
               </p>
               <h5>
                 <i>SKILLS</i>
@@ -61,8 +60,15 @@ export default function ProjectFour() {
               <div className="skill-list">
                 <div className="skill">HTML5</div>
                 <div className="skill">CSS</div>
-                <div className="skill">API</div>
+                <div className="skill">Figma</div>
                 <div className="skill">JavaScript</div>
+                <div className="skill">React.js</div>
+                <div className="skill">Bootstrap</div>
+                <div className="skill">React-bootstrap</div>
+                <div className="skill">jQuery</div>
+                <div className="skill">API</div>
+                <div className="skill">Jest</div>
+                <div className="skill">ResponsiveWeb</div>
               </div>
             </div>
           </div>
@@ -75,23 +81,28 @@ export default function ProjectFour() {
                 <div className="userWant-1">
                   <h5>01</h5>
                   <span>
-                    They need to use my knowledge of React components and
-                    passing state.
+                    They need to create a Task Planner web app from scratch.
                   </span>
                 </div>
                 <div className="userWant-2">
                   <h5>02</h5>
                   <span>
-                    They need requests with the Spotify API to build a website
-                    that allows users to search the Spotify library, create a
-                    custom playlist, then save it to their Spotify account.
+                    they need to demonstrate the technical and non-technical
+                    skills developed during the Junior Web Developer program.
                   </span>
                 </div>
               </div>
             </div>
             <div className="project-body-inner-2">
               <h3>REQUIREMENTS</h3>
-              <img src={Jammming}></img>
+              <img src={wireframes}></img>
+              <div className="project-body-inner-3">
+                <h3>WIREFRAMES</h3>
+                <h4>BEFORE</h4>
+                <img src={DemoOne}></img>
+                <h4>AFTER</h4>
+                <img src={DemoTwo}></img>
+              </div>
             </div>
           </div>
         </div>
@@ -99,55 +110,92 @@ export default function ProjectFour() {
           <div className="project-footer-inner">
             <h1>PROCESS</h1>
             <p>
-              The main goal of this project was to understand how apis worked,
-              but I needed to complete the entire web app framework before
-              writing the API. I used the HTML and CSS provided by the project
-              and then used react to create different classes. Since I had
-              completed some SIDE PROJECTs for REACT before starting this
-              project, it wasn't difficult to create the react part.
+              Before the coding starts, we'll discuss the necessary features of
+              the to-do list, as well as the extra features we want to add.
+              After drawing the wireframe of the to-do list, we built the
+              framework using HTML, CSS, and bootstrap. For added convenience,
+              we used React .js to make the project instead, and React.Hook
+              replaced React.Component and React-bootstrap instead of bootstrap.
+              Next, work is assigned to work on the project.
             </p>
             <h1>SOLUTION</h1>
+            <h3 className="smallTitle">ADD TASK FUNCTION</h3>
             <p>
-              I understand the versatility and role of APIs, so I want to learn
-              how to use APIs, like the most commonly used Google Map API. The
-              difficulty of the API is more difficult than I expected, Spotify
-              provides teaching, I follow the steps to write to make the API
-              work, but I don't understand how the API works. Without teaching,
-              I wouldn't be able to introduce APIs from scratch. To this end, I
-              have added a lot of comments to the FUNCTION, leaving it for
-              reference when you need to use the API later.
+              After I co-organized the general framework with the team members,
+              I began the functional part that I was responsible for. I pick
+              some of the more special parts that I am responsible for to
+              illustrate. The first is the add task function, I used useState to
+              place the Task data, facilitate the team member in charge of the
+              data to change, and use .map to loop out each new task.
             </p>
-            <img src={commentOne}></img>
-            <img src={commentTwo}></img>
+            <h3 className="smallTitle">UPDATE TASK FUNCTION</h3>
+            <p>
+              The second is the update task function, at the beginning, I was
+              going to use the bootstrap top up the screen to present this
+              function, just considering that my add task function is not using
+              the top up screen to display. Finally, I used the pen img in the
+              task to directly update the information in the task.
+            </p>
+            <h3 className="smallTitle">
+              TICK TASK TO DONE & DELETE TASK FUNCTION
+            </h3>
+            <p>
+              The next feature I'm going to say is to display the task as done
+              after tapping and to delete the done task. Clicking on the task
+              shows as a don, is the most important feature of the entire to do
+              list, so I chose a tick button and changed the task's title to a
+              light color as well as added a delete symbol to present this
+              function. I used className to add done to accomplish this. As for
+              the deletion function, it is to determine whether the task has a
+              done className, and if it is displayed as true, it will be
+              deleted.
+            </p>
+            <h3 className="smallTitle">SEARCH TASK FUNCTION</h3>
+            <p>
+              After the team member responsible for writing the data completed
+              the local data, I started to write the search function. I wrote it
+              using the search function I learned from the last jammming
+              project. Since it is not an API, I need to write the actual search
+              function myself, I use it to determine whether the length of the
+              search input is 0 to perform this function. When there is nothing
+              in the input bar, all tasks are displayed. When there is input,
+              the task title is searched, and only tasks with the same text are
+              displayed.
+            </p>
+            <h3 className="smallTitle">ADD TASK FUNCTION</h3>
+            <p>
+              Finally, there are some interesting features that I decided to
+              add, which are sidebar and dark mode. Sidebar is very commonly
+              used, so I took the opportunity to add them. Dark mode has also
+              been a very popular feature lately, so I tried it out as well.
+              Interestingly, after using jQuery to complete the dark mode, I
+              found a more convenient way to write it, which is CSS custom
+              properties. I should try this feature next time I need to use
+              similar CSS.
+            </p>
             <h3>RESULTS AND TAKEAWAYS</h3>
             <p>
-              This web app can run successfully, but I still have a
-              half-understanding of the operation of the API and need to learn
-              more. In addition, to use this web app, you need to fill in Users
-              and Access in the background of{" "}
-              <a
-                href="https://developer.spotify.com/my-applications/#!/applications"
-                target="_blank"
-              >
-                <i>Spotify</i>
-              </a>{" "}
-              to use it, otherwise, a 403 error will be displayed.
+              The project was conducted in small groups, which gave me an idea
+              of how a project can be created from scratch. After understanding
+              the ten project requirements, we expressed our opinions to choose
+              the part of our handle and added some additional features to make
+              the entire Web app more complete and beautiful. In fact, I have
+              not participated in the two parts of data and test, and do not
+              understand how it actually works. Therefore, in the future, I need
+              to check related articles to increase my knowledge.
             </p>
-            <div>
-              <img src={jammmingSpotify}></img>
-            </div>
             <a
-              href="https://github.com/Andison624/Jammming"
+              href="https://github.com/Andison624/ToDoList"
               target="_blank"
-              rel="jammming"
+              rel="toDoList"
               className="project-footer-btn-one"
             >
               VIEW CODE
             </a>
             <a
-              href="https://andison624.github.io/Jammming/"
+              href="https://andison624.github.io/ToDoList/"
               target="_blank"
-              rel="jammming"
+              rel="toDoList"
               className="project-footer-btn-two"
             >
               VIEW DEMO
@@ -155,7 +203,13 @@ export default function ProjectFour() {
             <h5>
               <i>Some key takeaways from this project are:</i>
             </h5>
-            <li>How the API works</li>
+            <li>
+              I learned to react.Hook, which is more convenient than
+              React.Component
+            </li>
+            <li>
+              I learned to use Figma to paint sitemaps before creating a web app
+            </li>
           </div>
           <Link to="/projectThree">
             <i className="fa-solid fa-angles-left"></i>

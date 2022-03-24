@@ -11,22 +11,24 @@ import Jammming from "../../images/Jammming.png";
 import JammmingMin from "../../images/Jammming-min.png";
 import ToDoList from "../../images/ToDoList.png";
 import ToDoListMin from "../../images/ToDoList-min.png";
+import Portfolio from "../../images/portfolio.png";
+import PortfolioMin from "../../images/portfolio-min.png";
 
 import "./ProjectList.css";
 import { Link } from "react-router-dom";
 
 export default function Project() {
   const pjListData = [
-    {
-      id: "colmarAcademy",
-      pjTitle: "Colmar Academy",
-      pjDetail:
-        "My first side project, a web template need to use HTML5, CSS, and Responsive Web Design as project requirements. Outside of the project requirements, I joined the bootstrap framework to complete this side project.",
-      src: ColmarAcademy,
-      src2: ColmarAcademyMin,
-      alt: "Colmar Academy Side Project",
-      link: "/projectOne",
-    },
+    // {
+    //   id: "colmarAcademy",
+    //   pjTitle: "Colmar Academy",
+    //   pjDetail:
+    //     "My first side project, a web template need to use HTML5, CSS, and Responsive Web Design as project requirements. Outside of the project requirements, I joined the bootstrap framework to complete this side project.",
+    //   src: ColmarAcademy,
+    //   src2: ColmarAcademyMin,
+    //   alt: "Colmar Academy Side Project",
+    //   link: "/projectOne",
+    // },
     {
       id: "findYourHat",
       pjTitle: "Find Your Hat",
@@ -35,7 +37,7 @@ export default function Project() {
       src: FindYourHat,
       src2: FindYourHatMin,
       alt: "Find Your Hat Side Project",
-      link: "/projectTwo",
+      link: "/projectOne",
     },
     {
       id: "numberGuesser",
@@ -45,7 +47,7 @@ export default function Project() {
       src: NumberGuesser,
       src2: NumberGuesserMin,
       alt: "Number Guesser Side Project",
-      link: "/projectThree",
+      link: "/projectTwo",
     },
     {
       id: "jammming",
@@ -55,7 +57,7 @@ export default function Project() {
       src: Jammming,
       src2: JammmingMin,
       alt: "Jammming Side Project",
-      link: "/projectFour",
+      link: "/projectThree",
     },
     {
       id: "toDoList",
@@ -65,6 +67,16 @@ export default function Project() {
       src: ToDoList,
       src2: ToDoListMin,
       alt: "To Do List Side Project",
+      link: "/projectFour",
+    },
+    {
+      id: "portfolio",
+      pjTitle: "Portfolio",
+      pjDetail:
+        "It's The first work, which is independently completed from scratch, needs to present the knowledge it has as much as possible, and at the same time meet the requirements of aesthetics and practicality one-month side project by three people, that uses all the knowledge I've learned, starting with design, exchanging ideas with team members, and sharing suggestions, a web app that can really be used by others.",
+      src: Portfolio,
+      src2: PortfolioMin,
+      alt: "Portfolio Side Project",
       link: "/projectFive",
     },
   ];
